@@ -1,0 +1,24 @@
+#+TITLE: TROTER.JP
+#+AUTHOR: Takumi IINO (troter)
+#+EMAIL: takumi@timedia.co.jp, trot.thunder@gmail.com
+#+LANGUAGE: ja
+
+#+OPTIONS: ^:nil toc:nil
+#+STYLE: <link rel="stylesheet" type="text/css" href="org-mode-document.css" />
+
+* About
+- Takumi IINO (a.k.a troter)
+- Software Engineer
+- Emacs, Ruby, PHP, Java
+
+* Resource
+- Twitter([[http://twitter.com/troter][@troter]])
+- Hatena([[http://d.hatena.ne.jp/troter][id:troter]])
+- Github([[https://github.com/troter][troter]])
+
+* Programs
+- [[https://github.com/troter/tags-capture][tags-capture]] :: Capture library for JSP.
+- [[https://github.com/troter/s2jdbc-custom-enum-type][s2jdbc-custom-enum-type]] :: Use custom enum type with s2jdbc.
+
+* Publications
+- [[./mercurial-cheatsheet][Mercurial チートシート]]
