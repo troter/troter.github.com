@@ -21,7 +21,8 @@
 - [[https://github.com/troter/s2jdbc-custom-enum-type][s2jdbc-custom-enum-type]] :: Use custom enum type with s2jdbc.
 
 ** Maven Repository
-- release : [[http://troter.jp/maven2/release]]
+- release :: [[http://troter.jp/maven2/release]]
+- snapshot :: まだない
 
 * Publications
 - [[./mercurial-cheatsheet][Mercurial チートシート]]
