@@ -13,6 +13,7 @@
 
 * Resource
 - Twitter([[http://twitter.com/troter][@troter]])
+ - [[http://twilog.org/troter][Twilog]]
 - Hatena([[http://d.hatena.ne.jp/troter][id:troter]])
 - Github([[https://github.com/troter][troter]])
 
