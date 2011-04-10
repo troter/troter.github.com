@@ -20,10 +20,11 @@
 * Programs
 - [[https://github.com/troter/tags-capture][tags-capture]] :: Capture library for JSP.
 - [[https://github.com/troter/s2jdbc-custom-enum-type][s2jdbc-custom-enum-type]] :: Use custom enum type with s2jdbc.
+- [[https://github.com/troter/s2jdbc-master-slave][s2jdbc-master-slave]] :: s2jdbc master-slave support.
 
 ** Maven Repository
 - release :: [[http://troter.jp/maven2/release]]
-- snapshot :: まだない
+- snapshot :: [[http://troter.jp/maven2/snapshots]]
 
 * Publications
 - [[./mercurial-cheatsheet][Mercurial チートシート]]
