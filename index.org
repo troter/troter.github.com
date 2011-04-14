@@ -31,7 +31,7 @@
 - Hatena([[http://d.hatena.ne.jp/troter][id:troter]])
 - Github([[https://github.com/troter][troter]])
 
-* Programs
+* Projects
 - [[https://github.com/troter/tags-capture][tags-capture]] :: Capture library for JSP.
 - [[https://github.com/troter/s2jdbc-custom-enum-type][s2jdbc-custom-enum-type]] :: Use custom enum type with s2jdbc.
 - [[https://github.com/troter/s2jdbc-master-slave][s2jdbc-master-slave]] :: s2jdbc master-slave support.
