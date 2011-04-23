@@ -35,6 +35,7 @@
 - [[https://github.com/troter/tags-capture][tags-capture]] :: Capture library for JSP.
 - [[https://github.com/troter/s2jdbc-custom-enum-type][s2jdbc-custom-enum-type]] :: Use custom enum type with s2jdbc.
 - [[https://github.com/troter/s2jdbc-master-slave][s2jdbc-master-slave]] :: s2jdbc master-slave support.
+- [[https://github.com/troter/log4j-rotate][log4j-rotate]] :: Log4j rotate file appender.
 
 ** Maven Repository
 - release  :: [[http://troter.jp/maven2/release]] @<br/> [[https://github.com/troter/troter.github.com/tree/master/maven2/release]]
