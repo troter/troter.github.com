@@ -8,7 +8,7 @@
 
 * はじめに
   - このドキュメントは[[http://kokucheese.com/event/index/13468/][SCM Boot Camp in Tokyo(2011-07-30)]]配布資料の原稿です。
-  - mercurialのインストールドキュメントがgithubに上がっていることに疑問を覚えないこと。
+  - mercurialのインストールドキュメントが[[https://github.com/troter/troter.github.com/tree/master/how-to-install-mercurial][github]]に上がっていることに疑問を覚えないこと。
 
 * Mercurialの入手方法
   次のURLから取得できます。
@@ -16,12 +16,21 @@
   [[http://mercurial.selenic.com/downloads/]]
 
 * Windowsの場合
-** TortoiseHgの場合
+
+  Windowsの場合、次の選択肢からMercurialをインストールする方法を選ぶことが出来ます。
+
+  | 要求                                   | インストール方法                                                |
+  |----------------------------------------+-----------------------------------------------------------------|
+  | GUI を利用したい場合                   | TortoiseHgをインストール                                        |
+  | CUI Windows版バイナリ を利用したい場合 | MSI installer もしくはInno Setup installer を使ってインストール |
+  | CUI Cygwinから利用したい場合           | Linux/Cygwinの場合を参照                                        |
+
+** TortoiseHgをインストール
   MercurialをGUIで利用したい場合はTortoiseHgをインストールしてください。TortoiseHgインストール後、OSの再起動は必要ありません。
 
 *** インストール
 
-  1.まずTortoiseHgのインストーラをダウンロードします。
+  1.まず http://mercurial.selenic.com/downloads/ からTortoiseHgのインストーラをダウンロードします。
 
   #+ATTR_HTML: alt="TortoiseHGのダウンロード"
   [[file:tortoisehg-download.png]]
@@ -73,25 +82,27 @@
   file:tortoisehg-about.png
 
 *** KDiff3の代わりにWinMergeを利用する
+  TortoiseHgにはKDiff3がバンドルされていますが、いまいち使いにくいのでWinMergeを利用するように変更します。
+
   右クリックメニューから「Global Settings」を選択します。
   
   #+ATTR_HTML: alt="TortoiseHG Global Settings"
   file:tortoisehg-explorer-menu-global-settings.png
 
-  「TortoiseHg」の「GUI差分表示ツール」のプルダウンから「winmergeu」を選択します。
+  「TortoiseHg」の「3-wayマージツール」、「GUI差分表示ツール」のプルダウンから「winmergeu」を選択します。
 
   #+ATTR_HTML: alt="TortoiseHG Global Settings"
   file:tortoisehg-global-settings-tortoisehg.png
 
 
-** MSI Installerから
-  GUIシェル拡張は不要でhgコマンドのみインストールしたい場合は MSI Installer を利用してインストールします。
+** MSI installerを使って
+  GUIシェル拡張は不要でhgコマンドのみインストールしたい場合は MSI installer を利用してインストールします。
 
   TODO
 
 
-** Inno Setup Installerから
-  MSI Installerは管理者権限が必要でしたが、Inno Setup Installerを利用すると一般ユーザでもインストールが行えます。
+** Inno Setup installerを使って
+  MSI Installerは管理者権限が必要でしたが、Inno Setup installerを利用すると一般ユーザでもインストールが行えます。
 
   インストール方法はMSI Installerと同じですので、ここでは説明を割愛します。
 
@@ -101,25 +112,25 @@
 
   TODO
 
-** macportsで
+** macportsを使って
 
   TODO
 
-** homebrewで
+** homebrewを使って
 
   TODO
 
-** pkgsrcで
+** pkgsrcを使って
 
   TODO
 
 * Linux/Cygwinの場合
 
-** 各ディストリビュージョンのパッケージからインストール
+** 各ディストリビュージョンのパッケージから
 
   TODO  
 
-** easy_installで
+** easy_installを使って
 
   easy_install(setuptools)をつかってPyPIからMercurial [fn:pypi-mercurial] をインストールする事も出来ます。
 
