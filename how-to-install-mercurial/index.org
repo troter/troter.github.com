@@ -98,7 +98,42 @@
 ** MSI installerを使って
   GUIシェル拡張は不要でhgコマンドのみインストールしたい場合は MSI installer を利用してインストールします。
 
-  TODO
+*** インストール
+
+  1.まず http://mercurial.selenic.com/downloads/ からMSI installerダウンロードします。
+
+  #+ATTR_HTML: alt="TortoiseHGのダウンロード"
+  [[file:msi-installer-download.png]]
+
+  2.ダウンロードしたTortoiseHgインストーラを実行します。
+
+  #+ATTR_HTML: alt="TortoiseHGインストーラの実行"
+  [[file:msi-installer-start.png]]
+
+  3.ライセンスに同意します。問題無ければ「Next」をクリックします。
+
+  #+ATTR_HTML: alt="TortoiseHGインストーラ、ライセンスに同意"
+  [[file:msi-installer-license-agreement.png]]
+
+  4.インストール内容の確認を行います。インストール先を変更する場合は「Browse」を。問題無ければ「Next」をクリックします。
+
+  #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール内容の確認"
+  file:msi-installer-custom-setup.png
+
+  5.インストール前の確認です。問題無ければ「Install」をクリックします。
+
+  #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール前の確認"
+  file:msi-installer-ready-to-install.png
+
+  6.インストールが開始されます。
+
+  #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール"
+  file:msi-installer-installing.png
+
+  7.問題が無ければインストール完了です。
+
+  #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール完了"
+  file:msi-installer-finish.png
 
 
 ** Inno Setup installerを使って
