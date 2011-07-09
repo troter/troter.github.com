@@ -117,7 +117,7 @@
 
 ** 各ディストリビュージョンのパッケージからインストール
 
-  
+  TODO  
 
 ** easy_installで
 
@@ -209,53 +209,4 @@
 * 参考文献
 - [[http://mercurial.selenic.com/wiki/Download][Download]]
 - [[http://mercurial.selenic.com/wiki/WindowsInstall][WindowsInstall]]
-- [[http://mercurial.selenic.com/wiki/UnixInstall][UnixInstall]]  プレフィックスを変更する場合は---prefixを指定します。
-
-  #+BEGIN_SRC shell
-  % sh setuptools-0.6c11-py2.6.egg --prefix=/path/to/setuptools
-  #+END_SRC
-
-*** eazy_installからMercurialをインストール
-
-  eazy_installがインストール出来たら、eazy_installコマンドを使ってMercurialをインストールしましょう。
-
-  #+BEGIN_SRC shell
-  % eazy_install mercurial
-  #+END_SRC
-
-** ソースから
-
-  ソースコードアーカイブを取得、展開します。
-
-  #+BEGIN_SRC shell
-  % curl -O http://mercurial.selenic.com/release/mercurial-1.9.tar.gz
-  % tar zxvf mercurial-1.9.tar.gz
-  % cd mercurial-1.9
-  #+END_SRC
-
-  mercurialにはconfigureスクリプトは同梱されていないので、適切にmakeコマンドに引数を与えてインストールします
-
-*** ユーザ毎にインストール
-
-  ~/bin、~/lib以下にインストールする場合です。
-
-  #+BEGIN_SRC shell
-  % make install-home
-  #+END_SRC
-
-*** システムワイドにインストール
-
-  /usr/local以下にインストールする場合です。
-
-  #+BEGIN_SRC shell
-  % make install
-  #+END_SRC
-
-  プレフィックスを変更する場合はPREFIXを指定します。
-
-  #+BEGIN_SRC shell
-  % make install PREFIX=/path/to/mercurial
-  #+END_SRC
-
-
-
+- [[http://mercurial.selenic.com/wiki/UnixInstall][UnixInstall]]
