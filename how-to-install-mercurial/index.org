@@ -24,11 +24,11 @@
   |----------------------------------------+-----------------------------------------------------------------|
   | GUI を利用したい場合                   | TortoiseHgをインストール                                        |
   | CUI Windows版バイナリ を利用したい場合 | MSI installer もしくはInno Setup installer を使ってインストール |
-  | CUI Cygwinから利用したい場合           | Linux/Cygwinの場合を参照                                        |
+  | CUI Cygwinから利用したい場合           | [[*Linux/Cygwinの場合][Linux/Cygwinの場合]]を参照                                        |
 
 ** TortoiseHgをインストール
 
-  MercurialをGUIで利用したい場合はTortoiseHgをインストールしてください。TortoiseHgインストール後、OSの再起動は必要ありません。
+  MercurialをGUIで利用したい場合は[[http://tortoisehg.bitbucket.org/][TortoiseHg]]をインストールしてください。TortoiseHgインストール後、OSの再起動は必要ありません。
 
 *** インストール
 
@@ -148,7 +148,9 @@
 
 * MacOSXの場合
 
-** MacHgのインストール
+** MacHgのインストール(OSX 10.6+)
+
+  MercurialをGUIで利用したい場合は[[http://jasonfharris.com/machg/][MacHg]]をインストールしてください。
 
   TODO
 
