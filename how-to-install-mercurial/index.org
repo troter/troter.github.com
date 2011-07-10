@@ -86,7 +86,7 @@
 
 *** KDiff3の代わりにWinMergeを利用する
 
-  TortoiseHgにはKDiff3がバンドルされていますが、いまいち使いにくいのでWinMergeを利用するように変更します。
+  TortoiseHgにはKDiff3がバンドルされていますが、いまいち使いにくいので[[http://www.geocities.co.jp/SiliconValley-SanJose/8165/winmerge.html][WinMerge]]を利用するように変更します。
 
   右クリックメニューから「Global Settings」を選択します。
   
@@ -250,7 +250,7 @@
 
 ** ソースから
 
-  mercurial 1.4以降はdocutilsというパッケージに依存しています。easy_installを利用する場合は依存関係解決の中で自動的にインストールされますが、
+  mercurial 1.4以降は[[http://docutils.sourceforge.net/][docutils]]というパッケージに依存しています。easy_installを利用する場合は依存関係解決の中で自動的にインストールされますが、
   ソースからインストールする場合は自前でインストールする必要があります。
 
 *** docutilsのインストール
