@@ -219,7 +219,7 @@
 
 ** easy_installを使って
 
-  easy_install(setuptools)をつかって[[http://pypi.python.org/pypi][PyPI]]からmercurialをインストールする事も出来ます。
+  [[http://pypi.python.org/pypi/setuptools][easy_install]]は[[http://pypi.python.org/pypi][PyPI]]の簡易インストーラです。
 
   システムのpythonを利用した場合、/usr/binにインストールするので気をつけてください。
 
@@ -246,6 +246,26 @@
 
   #+BEGIN_SRC shell
   % easy_install -U mercurial
+  #+END_SRC
+
+** pipを使って
+
+  [[http://pypi.python.org/pypi/pip][pip]]はeasy_installを置き換えるパッケージインストーラです。パッケージの検索、パッケージのアンインストールなど豊富な機能を備えています。
+
+*** pipのインストール
+
+  easy_installを使ってインストールする事が出来ます。
+
+  #+BEGIN_SRC shell
+  % easy_install -U pip
+  #+END_SRC
+
+*** pipでmercurialをインストール
+
+  pipを使ってmercurialをインストールします。
+
+  #+BEGIN_SRC shell
+  % pip install mercurial
   #+END_SRC
 
 ** ソースから

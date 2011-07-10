@@ -7,7 +7,7 @@ lang="ja" xml:lang="ja">
 <title>How to install mercurial.</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2011-07-10 17:40:09 "/>
+<meta name="generated" content="2011-07-10 18:12:33 "/>
 <meta name="author" content="Takumi IINO (troter)"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -122,12 +122,18 @@ lang="ja" xml:lang="ja">
 <li><a href="#sec-5.2.2">5.2.2 easy_intallでmercurialをインストール </a></li>
 </ul>
 </li>
-<li><a href="#sec-5.3">5.3 ソースから </a>
+<li><a href="#sec-5.3">5.3 pipを使って </a>
 <ul>
-<li><a href="#sec-5.3.1">5.3.1 docutilsのインストール </a></li>
-<li><a href="#sec-5.3.2">5.3.2 mercurialのソースコードアーカイブの取得 </a></li>
-<li><a href="#sec-5.3.3">5.3.3 ユーザ毎にインストール </a></li>
-<li><a href="#sec-5.3.4">5.3.4 システムワイドにインストール </a></li>
+<li><a href="#sec-5.3.1">5.3.1 pipのインストール </a></li>
+<li><a href="#sec-5.3.2">5.3.2 pipでmercurialをインストール </a></li>
+</ul>
+</li>
+<li><a href="#sec-5.4">5.4 ソースから </a>
+<ul>
+<li><a href="#sec-5.4.1">5.4.1 docutilsのインストール </a></li>
+<li><a href="#sec-5.4.2">5.4.2 mercurialのソースコードアーカイブの取得 </a></li>
+<li><a href="#sec-5.4.3">5.4.3 ユーザ毎にインストール </a></li>
+<li><a href="#sec-5.4.4">5.4.4 システムワイドにインストール </a></li>
 </ul></li>
 </ul>
 </li>
@@ -576,7 +582,7 @@ setup.exeを使用したパッケージインストール時にmercurialを指�
 
 
 <p>
-easy_install(setuptools)をつかって<a href="http://pypi.python.org/pypi">PyPI</a>からmercurialをインストールする事も出来ます。
+<a href="http://pypi.python.org/pypi/setuptools">easy_install</a>は<a href="http://pypi.python.org/pypi">PyPI</a>の簡易インストーラです。
 </p>
 <p>
 システムのpythonを利用した場合、/usr/binにインストールするので気をつけてください。
@@ -643,8 +649,62 @@ easy_installを使ってmercurialをインストールします。
 </div>
 
 <div id="outline-container-5.3" class="outline-3">
-<h3 id="sec-5.3"><span class="section-number-3">5.3</span> ソースから </h3>
+<h3 id="sec-5.3"><span class="section-number-3">5.3</span> pipを使って </h3>
 <div class="outline-text-3" id="text-5.3">
+
+
+<p>
+<a href="http://pypi.python.org/pypi/pip">pip</a>はeasy_installを置き換えるパッケージインストーラです。パッケージの検索、パッケージのアンインストールなど豊富な機能を備えています。
+</p>
+
+</div>
+
+<div id="outline-container-5.3.1" class="outline-4">
+<h4 id="sec-5.3.1"><span class="section-number-4">5.3.1</span> pipのインストール </h4>
+<div class="outline-text-4" id="text-5.3.1">
+
+
+<p>
+easy_installを使ってインストールする事が出来ます。
+</p>
+
+
+
+<pre class="example">% easy_install -U pip
+</pre>
+
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-5.3.2" class="outline-4">
+<h4 id="sec-5.3.2"><span class="section-number-4">5.3.2</span> pipでmercurialをインストール </h4>
+<div class="outline-text-4" id="text-5.3.2">
+
+
+<p>
+pipを使ってmercurialをインストールします。
+</p>
+
+
+
+<pre class="example">% pip install mercurial
+</pre>
+
+
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5.4" class="outline-3">
+<h3 id="sec-5.4"><span class="section-number-3">5.4</span> ソースから </h3>
+<div class="outline-text-3" id="text-5.4">
 
 
 <p>
@@ -654,9 +714,9 @@ mercurial 1.4以降は<a href="http://docutils.sourceforge.net/">docutils</a>と
 
 </div>
 
-<div id="outline-container-5.3.1" class="outline-4">
-<h4 id="sec-5.3.1"><span class="section-number-4">5.3.1</span> docutilsのインストール </h4>
-<div class="outline-text-4" id="text-5.3.1">
+<div id="outline-container-5.4.1" class="outline-4">
+<h4 id="sec-5.4.1"><span class="section-number-4">5.4.1</span> docutilsのインストール </h4>
+<div class="outline-text-4" id="text-5.4.1">
 
 
 <p>
@@ -689,9 +749,9 @@ easy_installを利用する事も出来ます。
 
 </div>
 
-<div id="outline-container-5.3.2" class="outline-4">
-<h4 id="sec-5.3.2"><span class="section-number-4">5.3.2</span> mercurialのソースコードアーカイブの取得 </h4>
-<div class="outline-text-4" id="text-5.3.2">
+<div id="outline-container-5.4.2" class="outline-4">
+<h4 id="sec-5.4.2"><span class="section-number-4">5.4.2</span> mercurialのソースコードアーカイブの取得 </h4>
+<div class="outline-text-4" id="text-5.4.2">
 
 
 <p>
@@ -715,9 +775,9 @@ mercurialにはconfigureスクリプトは同梱されていないので、適�
 
 </div>
 
-<div id="outline-container-5.3.3" class="outline-4">
-<h4 id="sec-5.3.3"><span class="section-number-4">5.3.3</span> ユーザ毎にインストール </h4>
-<div class="outline-text-4" id="text-5.3.3">
+<div id="outline-container-5.4.3" class="outline-4">
+<h4 id="sec-5.4.3"><span class="section-number-4">5.4.3</span> ユーザ毎にインストール </h4>
+<div class="outline-text-4" id="text-5.4.3">
 
 
 <p>
@@ -736,9 +796,9 @@ mercurialにはconfigureスクリプトは同梱されていないので、適�
 
 </div>
 
-<div id="outline-container-5.3.4" class="outline-4">
-<h4 id="sec-5.3.4"><span class="section-number-4">5.3.4</span> システムワイドにインストール </h4>
-<div class="outline-text-4" id="text-5.3.4">
+<div id="outline-container-5.4.4" class="outline-4">
+<h4 id="sec-5.4.4"><span class="section-number-4">5.4.4</span> システムワイドにインストール </h4>
+<div class="outline-text-4" id="text-5.4.4">
 
 
 <p>
@@ -794,7 +854,7 @@ mercurialにはconfigureスクリプトは同梱されていないので、適�
 <a href="mailto:takumi@timedia.co.jp">&lt;takumi@timedia.co.jp&gt;</a>
 <a href="mailto:trot.thunder@gmail.com">&lt;trot.thunder@gmail.com&gt;</a>
 </p>
-<p class="date"> Date: 2011-07-10 17:40:09 </p>
+<p class="date"> Date: 2011-07-10 18:12:33 </p>
 <p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
 </div>
 </div>
