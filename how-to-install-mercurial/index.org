@@ -213,7 +213,7 @@
   % yum install mercurial
   #+END_SRC
 
-*** cygwin
+*** Cygwin
 
   setup.exeを使用したパッケージインストール時にmercurialを指定します。
 
@@ -222,10 +222,9 @@
 
 ** easy_installを使って
 
-  easy_install(setuptools)をつかってPyPIからMercurial [fn:pypi-mercurial] をインストールする事も出来ます。
+  easy_install(setuptools)をつかって[[http://pypi.python.org/pypi][PyPI]]からmercurialをインストールする事も出来ます。
 
   システムのpythonを利用した場合、/usr/binにインストールするので気をつけてください。
-[fn:pypi-mercurial] http://pypi.python.org/pypi/Mercurial/1.9  
 
 *** easy_installのインストール
 
