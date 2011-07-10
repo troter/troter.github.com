@@ -260,6 +260,13 @@
   % easy_install -U pip
   #+END_SRC
 
+  easy_installを利用しない場合は専用のget-pip.pyというインストーラを利用してインストールします。
+
+  #+BEGIN_SRC shell
+  % curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+  % python get-pip.py
+  #+END_SRC
+
 *** pipでmercurialをインストール
 
   pipを使ってmercurialをインストールします。
