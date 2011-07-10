@@ -156,17 +156,26 @@
 
   TODO
 
-** macportsを使って
+** MacPortsを使って
 
-  TODO
+  [[http://www.macports.org/][macports]]はFreeBSDのportsに似たパッケージ管理システムです。portsでインストールする事が出来ます。
 
-** homebrewを使って
+  #+BEGIN_SRC shell
+  % ports install mercurial
+  #+END_SRC
 
-  TODO
+** Homebrewを使って
 
-** pkgsrcを使って
+  [[http://mxcl.github.com/homebrew/][Homebrew]]にはmercurialのパッケージは用意されていません。
+  homebrewを利用してpythonとpythonのパッケージインストーラであるpipをインストール後、pipを利用してmercurialをインストールする必要があります。
 
-  TODO
+  [[*pipを使って][pipを使って]]も参照してください。
+
+  #+BEGIN_SRC shell
+  % brew intall python
+  % brew intall pip
+  % pip intall mercurial
+  #+END_SRC
 
 * Linux/Cygwinの場合
 
