@@ -7,7 +7,7 @@ lang="ja" xml:lang="ja">
 <title>How to install mercurial.</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2011-07-10 14:07:12 "/>
+<meta name="generated" content="2011-07-10 14:10:14 "/>
 <meta name="author" content="Takumi IINO (troter)"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -134,6 +134,7 @@ lang="ja" xml:lang="ja">
 <h2 id="sec-1"><span class="section-number-2">1</span> はじめに </h2>
 <div class="outline-text-2" id="text-1">
 
+
 <ul>
 <li>
 このドキュメントは<a href="http://kokucheese.com/event/index/13468/">SCM Boot Camp in Tokyo(2011-07-30)</a>配布資料の原稿です。
@@ -190,7 +191,9 @@ Windowsの場合、次の選択肢からMercurialをインストールする方�
 <h3 id="sec-3.1"><span class="section-number-3">3.1</span> TortoiseHgをインストール </h3>
 <div class="outline-text-3" id="text-3.1">
 
-<p>MercurialをGUIで利用したい場合はTortoiseHgをインストールしてください。TortoiseHgインストール後、OSの再起動は必要ありません。
+
+<p>
+MercurialをGUIで利用したい場合はTortoiseHgをインストールしてください。TortoiseHgインストール後、OSの再起動は必要ありません。
 </p>
 
 </div>
@@ -240,13 +243,13 @@ Windowsの場合、次の選択肢からMercurialをインストールする方�
 7.インストール時にエクスプローラの再起動を要求されます。問題無ければ「OK」をクリックします。
 </p>
 <p>
-<img src="tortoisehg-installer-explorer-restart-request.png" alt="TortoiseHGインストーラ、エクスプローラの再起動" />
+<a href="#[[file:tortoisehg-installer-explorer-restart-request.png"alt="TortoiseHGインストーラ、エクスプローラの再起動"><img src="tortoisehg-installer-explorer-restart-request.png"/></a>]]
 </p>
 <p>
 8.問題が無ければインストール完了です。
 </p>
 <p>
-<img src="tortoisehg-installer-finish.png" alt="TortoiseHGインストーラ、インストール完了" />
+<a href="#[[file:tortoisehg-installer-finish.png"alt="TortoiseHGインストーラ、インストール完了"><img src="tortoisehg-installer-finish.png"/></a>]]
 </p>
 </div>
 
@@ -256,16 +259,18 @@ Windowsの場合、次の選択肢からMercurialをインストールする方�
 <h4 id="sec-3.1.2"><span class="section-number-4">3.1.2</span> インストール後の確認 </h4>
 <div class="outline-text-4" id="text-3.1.2">
 
-<p>エクスプローラの右クリックメニューを確認してみましょう。
+
+<p>
+エクスプローラの右クリックメニューを確認してみましょう。
 </p>
 <p>
-<img src="tortoisehg-explorer-menu.png" alt="TortoiseHG 右クリックメニュー" />
+<a href="#[[file:tortoisehg-explorer-menu.png"alt="TortoiseHG 右クリックメニュー"><img src="tortoisehg-explorer-menu.png"/></a>]]
 </p>
 <p>
 「About TortoiseHg」をクリックして見ましょう。
 </p>
 <p>
-<img src="tortoisehg-about.png" alt="TortoiseHG 情報" />
+<a href="#[[file:tortoisehg-about.png"alt="TortoiseHG 情報"><img src="tortoisehg-about.png"/></a>]]
 </p>
 </div>
 
@@ -275,21 +280,22 @@ Windowsの場合、次の選択肢からMercurialをインストールする方�
 <h4 id="sec-3.1.3"><span class="section-number-4">3.1.3</span> KDiff3の代わりにWinMergeを利用する </h4>
 <div class="outline-text-4" id="text-3.1.3">
 
-<p>TortoiseHgにはKDiff3がバンドルされていますが、いまいち使いにくいのでWinMergeを利用するように変更します。
+
+<p>
+TortoiseHgにはKDiff3がバンドルされていますが、いまいち使いにくいのでWinMergeを利用するように変更します。
 </p>
 <p>
 右クリックメニューから「Global Settings」を選択します。
 </p>
 <p>
-<img src="tortoisehg-explorer-menu-global-settings.png" alt="TortoiseHG Global Settings" />
+<a href="#[[file:tortoisehg-explorer-menu-global-settings.png"alt="TortoiseHG Global Settings"><img src="tortoisehg-explorer-menu-global-settings.png"/></a>]]
 </p>
 <p>
 「TortoiseHg」の「3-wayマージツール」、「GUI差分表示ツール」のプルダウンから「winmergeu」を選択します。
 </p>
 <p>
-<img src="tortoisehg-global-settings-tortoisehg.png" alt="TortoiseHG Global Settings" />
+<a href="#[[file:tortoisehg-global-settings-tortoisehg.png"alt="TortoiseHG Global Settings"><img src="tortoisehg-global-settings-tortoisehg.png"/></a>]]
 </p>
-
 </div>
 </div>
 
@@ -299,7 +305,9 @@ Windowsの場合、次の選択肢からMercurialをインストールする方�
 <h3 id="sec-3.2"><span class="section-number-3">3.2</span> MSI installerを使って </h3>
 <div class="outline-text-3" id="text-3.2">
 
-<p>GUIシェル拡張は不要でhgコマンドのみインストールしたい場合は MSI installer を利用してインストールします。
+
+<p>
+GUIシェル拡張は不要でhgコマンドのみインストールしたい場合は MSI installer を利用してインストールします。
 </p>
 
 </div>
@@ -313,43 +321,43 @@ Windowsの場合、次の選択肢からMercurialをインストールする方�
 1.まず <a href="http://mercurial.selenic.com/downloads/">http://mercurial.selenic.com/downloads/</a> からMSI installerダウンロードします。
 </p>
 <p>
-<img src="msi-installer-download.png" alt="TortoiseHGのダウンロード" />
+<a href="#[[file:msi-installer-download.png"alt="TortoiseHGのダウンロード"><img src="msi-installer-download.png"/></a>]]
 </p>
 <p>
 2.ダウンロードしたTortoiseHgインストーラを実行します。
 </p>
 <p>
-<img src="msi-installer-start.png" alt="TortoiseHGインストーラの実行" />
+<a href="#[[file:msi-installer-start.png"alt="TortoiseHGインストーラの実行"><img src="msi-installer-start.png"/></a>]]
 </p>
 <p>
 3.ライセンスに同意します。問題無ければ「Next」をクリックします。
 </p>
 <p>
-<img src="msi-installer-license-agreement.png" alt="TortoiseHGインストーラ、ライセンスに同意" />
+<a href="#[[file:msi-installer-license-agreement.png"alt="TortoiseHGインストーラ、ライセンスに同意"><img src="msi-installer-license-agreement.png"/></a>]]
 </p>
 <p>
 4.インストール内容の確認を行います。インストール先を変更する場合は「Browse」を。問題無ければ「Next」をクリックします。
 </p>
 <p>
-<img src="msi-installer-custom-setup.png" alt="TortoiseHGインストーラ、インストール内容の確認" />
+<a href="#[[file:msi-installer-custom-setup.png"alt="TortoiseHGインストーラ、インストール内容の確認"><img src="msi-installer-custom-setup.png"/></a>]]
 </p>
 <p>
 5.インストール前の確認です。問題無ければ「Install」をクリックします。
 </p>
 <p>
-<img src="msi-installer-ready-to-install.png" alt="TortoiseHGインストーラ、インストール前の確認" />
+<a href="#[[file:msi-installer-ready-to-install.png"alt="TortoiseHGインストーラ、インストール前の確認"><img src="msi-installer-ready-to-install.png"/></a>]]
 </p>
 <p>
 6.インストールが開始されます。
 </p>
 <p>
-<img src="msi-installer-installing.png" alt="TortoiseHGインストーラ、インストール" />
+<a href="#[[file:msi-installer-installing.png"alt="TortoiseHGインストーラ、インストール"><img src="msi-installer-installing.png"/></a>]]
 </p>
 <p>
 7.問題が無ければインストール完了です。
 </p>
 <p>
-<img src="msi-installer-finish.png" alt="TortoiseHGインストーラ、インストール完了" />
+<a href="#[[file:msi-installer-finish.png"alt="TortoiseHGインストーラ、インストール完了"><img src="msi-installer-finish.png"/></a>]]
 </p>
 
 </div>
@@ -361,7 +369,9 @@ Windowsの場合、次の選択肢からMercurialをインストールする方�
 <h3 id="sec-3.3"><span class="section-number-3">3.3</span> Inno Setup installerを使って </h3>
 <div class="outline-text-3" id="text-3.3">
 
-<p>MSI Installerは管理者権限が必要でしたが、Inno Setup installerを利用すると一般ユーザでもインストールが行えます。
+
+<p>
+MSI Installerは管理者権限が必要でしたが、Inno Setup installerを利用すると一般ユーザでもインストールが行えます。
 </p>
 <p>
 インストール方法はMSI Installerと同じですので、ここでは説明を割愛します。
@@ -548,7 +558,9 @@ mercurial 1.4以降はdocutilsというパッケージに依存しています�
 <h4 id="sec-5.3.1"><span class="section-number-4">5.3.1</span> docutilsのインストール </h4>
 <div class="outline-text-4" id="text-5.3.1">
 
-<p>easy_installを利用する事も出来ます。
+
+<p>
+easy_installを利用する事も出来ます。
 </p>
 
 
@@ -653,7 +665,6 @@ mercurialにはconfigureスクリプトは同梱されていないので、適�
 
 
 
-
 </div>
 </div>
 </div>
@@ -663,6 +674,7 @@ mercurialにはconfigureスクリプトは同梱されていないので、適�
 <div id="outline-container-6" class="outline-2">
 <h2 id="sec-6"><span class="section-number-2">6</span> 参考文献 </h2>
 <div class="outline-text-2" id="text-6">
+
 
 <ul>
 <li>
@@ -692,7 +704,7 @@ mercurialにはconfigureスクリプトは同梱されていないので、適�
 <a href="mailto:takumi@timedia.co.jp">&lt;takumi@timedia.co.jp&gt;</a>
 <a href="mailto:trot.thunder@gmail.com">&lt;trot.thunder@gmail.com&gt;</a>
 </p>
-<p class="date"> Date: 2011-07-10 14:07:12 </p>
+<p class="date"> Date: 2011-07-10 14:10:14 </p>
 <p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
 </div>
 </div>

@@ -7,6 +7,7 @@
 #+STYLE: <link rel="stylesheet" type="text/css" href="org-mode-document.css" />
 
 * はじめに
+
   - このドキュメントは[[http://kokucheese.com/event/index/13468/][SCM Boot Camp in Tokyo(2011-07-30)]]配布資料の原稿です。
   - mercurialのインストールドキュメントが[[https://github.com/troter/troter.github.com/tree/master/how-to-install-mercurial][github]]に上がっていることに疑問を覚えないこと。
 
@@ -26,117 +27,121 @@
   | CUI Cygwinから利用したい場合           | Linux/Cygwinの場合を参照                                        |
 
 ** TortoiseHgをインストール
+
   MercurialをGUIで利用したい場合はTortoiseHgをインストールしてください。TortoiseHgインストール後、OSの再起動は必要ありません。
 
 *** インストール
 
   1.まず http://mercurial.selenic.com/downloads/ からTortoiseHgのインストーラをダウンロードします。
 
-  #+ATTR_HTML: alt="TortoiseHGのダウンロード"
-  [[file:tortoisehg-download.png]]
+    #+ATTR_HTML: alt="TortoiseHGのダウンロード"
+    [[file:tortoisehg-download.png]]
 
   2.ダウンロードしたTortoiseHgインストーラを実行します。
 
-  #+ATTR_HTML: alt="TortoiseHGインストーラの実行"
-  [[file:tortoisehg-installer-start.png]]
+    #+ATTR_HTML: alt="TortoiseHGインストーラの実行"
+    [[file:tortoisehg-installer-start.png]]
 
   3.ライセンスに同意します。問題無ければ「Next」をクリックします。
 
-  #+ATTR_HTML: alt="TortoiseHGインストーラ、ライセンスに同意"
-  [[file:tortoisehg-installer-license-agreement.png]]
+    #+ATTR_HTML: alt="TortoiseHGインストーラ、ライセンスに同意"
+    [[file:tortoisehg-installer-license-agreement.png]]
 
   4.インストール内容の確認を行います。インストール先を変更する場合は「Browse」を。問題無ければ「Next」をクリックします。
 
-  #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール内容の確認"
-  [[file:tortoisehg-installer-custom-setup.png]]
+    #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール内容の確認"
+    [[file:tortoisehg-installer-custom-setup.png]]
 
   5.インストール前の確認です。問題無ければ「Install」をクリックします。
 
-  #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール前の確認"
-  [[file:tortoisehg-installer-ready-to-install.png]]
+    #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール前の確認"
+    [[file:tortoisehg-installer-ready-to-install.png]]
 
   6.インストールが開始されます。
 
-  #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール"
-  [[file:tortoisehg-installer-installing.png]]
+    #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール"
+    [[file:tortoisehg-installer-installing.png]]
 
   7.インストール時にエクスプローラの再起動を要求されます。問題無ければ「OK」をクリックします。
 
-  #+ATTR_HTML: alt="TortoiseHGインストーラ、エクスプローラの再起動"
-  [[file:tortoisehg-installer-explorer-restart-request.png]]
+    #+ATTR_HTML: alt="TortoiseHGインストーラ、エクスプローラの再起動"
+  [[  file:tortoisehg-installer-explorer-restart-request.png]]
 
   8.問題が無ければインストール完了です。
 
-  #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール完了"
-  [[file:tortoisehg-installer-finish.png]]
+    #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール完了"
+  [[  file:tortoisehg-installer-finish.png]]
 
 *** インストール後の確認
+
   エクスプローラの右クリックメニューを確認してみましょう。
 
-  #+ATTR_HTML: alt="TortoiseHG 右クリックメニュー"
-  [[file:tortoisehg-explorer-menu.png]]
+    #+ATTR_HTML: alt="TortoiseHG 右クリックメニュー"
+  [[  file:tortoisehg-explorer-menu.png]]
 
   「About TortoiseHg」をクリックして見ましょう。
 
-  #+ATTR_HTML: alt="TortoiseHG 情報"
-  [[file:tortoisehg-about.png]]
+    #+ATTR_HTML: alt="TortoiseHG 情報"
+  [[  file:tortoisehg-about.png]]
 
 *** KDiff3の代わりにWinMergeを利用する
+
   TortoiseHgにはKDiff3がバンドルされていますが、いまいち使いにくいのでWinMergeを利用するように変更します。
 
   右クリックメニューから「Global Settings」を選択します。
   
-  #+ATTR_HTML: alt="TortoiseHG Global Settings"
-  [[file:tortoisehg-explorer-menu-global-settings.png]]
+    #+ATTR_HTML: alt="TortoiseHG Global Settings"
+  [[  file:tortoisehg-explorer-menu-global-settings.png]]
 
   「TortoiseHg」の「3-wayマージツール」、「GUI差分表示ツール」のプルダウンから「winmergeu」を選択します。
 
-  #+ATTR_HTML: alt="TortoiseHG Global Settings"
-  [[file:tortoisehg-global-settings-tortoisehg.png]]
-
+    #+ATTR_HTML: alt="TortoiseHG Global Settings"
+  [[  file:tortoisehg-global-settings-tortoisehg.png]]
 
 ** MSI installerを使って
+
   GUIシェル拡張は不要でhgコマンドのみインストールしたい場合は MSI installer を利用してインストールします。
 
 *** インストール
 
   1.まず http://mercurial.selenic.com/downloads/ からMSI installerダウンロードします。
 
-  #+ATTR_HTML: alt="TortoiseHGのダウンロード"
-  [[file:msi-installer-download.png]]
+    #+ATTR_HTML: alt="TortoiseHGのダウンロード"
+  [[  file:msi-installer-download.png]]
 
   2.ダウンロードしたTortoiseHgインストーラを実行します。
 
-  #+ATTR_HTML: alt="TortoiseHGインストーラの実行"
-  [[file:msi-installer-start.png]]
+    #+ATTR_HTML: alt="TortoiseHGインストーラの実行"
+  [[  file:msi-installer-start.png]]
 
   3.ライセンスに同意します。問題無ければ「Next」をクリックします。
 
-  #+ATTR_HTML: alt="TortoiseHGインストーラ、ライセンスに同意"
-  [[file:msi-installer-license-agreement.png]]
+    #+ATTR_HTML: alt="TortoiseHGインストーラ、ライセンスに同意"
+  [[  file:msi-installer-license-agreement.png]]
 
   4.インストール内容の確認を行います。インストール先を変更する場合は「Browse」を。問題無ければ「Next」をクリックします。
 
-  #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール内容の確認"
-  [[file:msi-installer-custom-setup.png]]
+    #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール内容の確認"
+  [[  file:msi-installer-custom-setup.png]]
 
   5.インストール前の確認です。問題無ければ「Install」をクリックします。
 
-  #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール前の確認"
-  [[file:msi-installer-ready-to-install.png]]
+    #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール前の確認"
+  [[  file:msi-installer-ready-to-install.png]]
 
   6.インストールが開始されます。
 
-  #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール"
-  [[file:msi-installer-installing.png]]
+    #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール"
+  [[  file:msi-installer-installing.png]]
 
   7.問題が無ければインストール完了です。
 
-  #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール完了"
-  [[file:msi-installer-finish.png]]
+    #+ATTR_HTML: alt="TortoiseHGインストーラ、インストール完了"
+  [[  file:msi-installer-finish.png]]
 
 
 ** Inno Setup installerを使って
+
   MSI Installerは管理者権限が必要でしたが、Inno Setup installerを利用すると一般ユーザでもインストールが行えます。
 
   インストール方法はMSI Installerと同じですので、ここでは説明を割愛します。
@@ -207,6 +212,7 @@
   ソースからインストールする場合は自前でインストールする必要があります。
 
 *** docutilsのインストール
+
   easy_installを利用する事も出来ます。
 
   #+BEGIN_SRC shell
@@ -255,8 +261,8 @@
   % make install PREFIX=/path/to/mercurial
   #+END_SRC
 
-
 * 参考文献
-- [[http://mercurial.selenic.com/wiki/Download][Download]]
-- [[http://mercurial.selenic.com/wiki/WindowsInstall][WindowsInstall]]
-- [[http://mercurial.selenic.com/wiki/UnixInstall][UnixInstall]]
+
+  - [[http://mercurial.selenic.com/wiki/Download][Download]]
+  - [[http://mercurial.selenic.com/wiki/WindowsInstall][WindowsInstall]]
+  - [[http://mercurial.selenic.com/wiki/UnixInstall][UnixInstall]]
