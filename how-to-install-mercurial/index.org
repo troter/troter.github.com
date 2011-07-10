@@ -184,9 +184,6 @@
   | Centos 5 (PRMforge)    |                 1.8.4 |
   | Cygwin                 |                 1.7.5 |
   | Cygwin                 |                 1.8.1 |
-  |                        |                       |
-
-  TODO  
 
 *** Debian/Ubuntu
 
