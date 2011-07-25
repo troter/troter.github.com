@@ -43,3 +43,4 @@
 
 * Publications
 - [[./mercurial-cheatsheet][Mercurial チートシート]]
+- [[./how-to-install-mercurial][Mercurialのインストール方法(SCMBC用資料)]]
