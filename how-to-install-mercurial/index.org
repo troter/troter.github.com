@@ -332,7 +332,7 @@
 
 ** ソースから
 
-  mercurial 1.4以降は[[http://docutils.sourceforge.net/][docutils]]というパッケージに依存しています。easy_installを利用する場合は依存関係解決の中で自動的にインストールされますが、
+  mercurial 1.4以降は[[http://docutils.sourceforge.net/][docutils]]というパッケージに依存しています。easy_installやpipを利用する場合は依存関係解決の中で自動的にインストールされますが、
   ソースからインストールする場合は自前でインストールする必要があります。
 
 *** docutilsのインストール
