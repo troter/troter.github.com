@@ -18,17 +18,22 @@
 
 * Windowsの場合
 
-  Windowsの場合、次の選択肢からMercurialをインストールする方法を選ぶことが出来ます。
+  Windowsの場合、次の選択肢からMercurialをインストールする方法を選ぶことが出来ます。TortoiseHgの利用がおすすめです。
 
-  | 要求                                   | インストール方法                                                |
-  |----------------------------------------+-----------------------------------------------------------------|
-  | GUI を利用したい場合                   | TortoiseHgをインストール                                        |
-  | CUI Windows版バイナリ を利用したい場合 | MSI installer もしくはInno Setup installer を使ってインストール |
-  | CUI Cygwinから利用したい場合           | [[*Linux/Cygwinの場合][Linux/Cygwinの場合]]を参照                                        |
+  | 要求                                               | インストール方法                                                |
+  |----------------------------------------------------+-----------------------------------------------------------------|
+  | GUIクライアントを利用したい場合(万人におすすめ)    | [[*TortoiseHgをインストール][TortoiseHgをインストール]]                                        |
+  | CUIクライアント(Windows版バイナリ)を利用したい場合 | [[*MSI%20installerを使って][MSI installer]] もしくは [[*Inno%20Setup%20installerを使って][Inno Setup installer]] を使ってインストール |
+  | CUIクライアント(Cygwin)を利用したい場合            | [[*Linux/Cygwinの場合][Linux/Cygwinの場合]]を参照                                        |
 
 ** TortoiseHgをインストール
 
-  MercurialをGUIで利用したい場合は[[http://tortoisehg.bitbucket.org/][TortoiseHg]]をインストールしてください。TortoiseHgインストール後、OSの再起動は必要ありません。
+  [[http://tortoisehg.bitbucket.org/][TortoiseHg]]はMercuialのGUIクライアント(TortoiseHg Workbench)とWindowsエクスプローラに統合するためのシェル拡張を含んだパッケージです。
+  WindowsでMercurialを利用したい場合はTortoiseHgをインストールすることをおすすめします。
+
+  TortoiseHgにはCUI Windows版バイナリ相当のファイルも同梱されていますので、CUIで利用するためにCUI Windows版バイナリをインストールする必要はありません。
+
+  TortoiseHgインストール後、OSの再起動は必要ありません。
 
 *** インストール
 
@@ -102,6 +107,8 @@
 
   GUIシェル拡張は不要でhgコマンドのみインストールしたい場合は MSI installer を利用してインストールします。
 
+  TorotiseHgにはCUI Windows版バイナリ相当のファイルも同梱されています。TortoiseHgをインストール済みの場合は別途インストールする必要はありません。
+
 *** インストール
 
   1.まず http://mercurial.selenic.com/downloads/ からMSI installerダウンロードします。
@@ -148,9 +155,18 @@
 
 * MacOSXの場合
 
-** MacHgのインストール(OSX 10.6+)
+  MacOSXの場合、次の選択肢からMercurialをインストールする方法を選ぶことが出来ます。
 
-  MercurialをGUIで利用したい場合は[[http://jasonfharris.com/machg/][MacHg]]をインストールしてください。
+  | 要求                            | インストール方法                                    |
+  |---------------------------------+-----------------------------------------------------|
+  | GUIクライアントを利用したい場合 | [[*MacHgをインストール(OSX%2010.6%2B)][MacHg]] をインストール                                |
+  | CUIクライアントを利用したい場合 | [[*公式バイナリから][公式バイナリ]]、[[*MacPortsを使って][MacPorts]]、[[*Homebrewを使って][Homebrew]] の中から好きなもの |
+
+  このドキュメントでは説明しませんが、[[http://www.sourcetreeapp.com/][SourceTree]]という有償のクライアント(無償のトライアル版有り)も存在します
+
+** MacHgをインストール(OSX 10.6+)
+
+  [[http://jasonfharris.com/machg/][MacHg]]はTortoiseHg Workbenchに似たGUIクライアントです。無償で利用できますのでまずはじめに試すことをおすすめします。
 
 *** インストール
 
