@@ -152,7 +152,35 @@
 
   MercurialをGUIで利用したい場合は[[http://jasonfharris.com/machg/][MacHg]]をインストールしてください。
 
-  TODO
+*** インストール
+
+  1.まず [[http://jasonfharris.com/machg/downloads/downloads.html]] からMacHgのアーカイブをダウンロードします。
+
+    #+ATTR_HTML: alt="MacHgのダウンロード"
+    [[file:machg-download.png]]
+
+  2.ダウンロードしたMacHgのアーカイブを展開します。
+
+    #+ATTR_HTML: alt="MacHgのアーカイブの展開"
+    [[file:machg-unzip.png]]
+
+  3.展開したするとMacHgというファイルが作成されます。
+
+    #+ATTR_HTML: alt="展開されたMacHg"
+    [[file:machg-unziped.png]]
+
+  4.展開したMacHgをアプリケーションディレクトリに移動させればインストール完了です。
+
+    #+ATTR_HTML: alt="アプリケーションディレクトリに移動"
+    [[file:machg-installed.png]]
+
+*** インストール後の確認
+
+  MacHgを起動してみましょう。次のような画面が表示されればインストール完了です。
+
+    #+ATTR_HTML: alt="MacHg"
+    [[file:machg.png]]
+
 
 ** 公式バイナリから
 
