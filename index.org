@@ -32,9 +32,10 @@
 - Github([[https://github.com/troter][troter]])
 
 * Projects
-- [[https://github.com/troter/tags-capture][tags-capture]] :: Capture library for JSP.
+- [[https://github.com/troter/tags-capture][tags-capture]] :: Simple capture library for JSP.
 - [[https://github.com/troter/s2jdbc-custom-enum-type][s2jdbc-custom-enum-type]] :: Use custom enum type with s2jdbc.
-- [[https://github.com/troter/s2jdbc-master-slave][s2jdbc-master-slave]] :: s2jdbc master-slave support.
+- [[https://github.com/troter/s2jdbc-master-slave][s2jdbc-master-slave]] :: Master-Slave support for S2JDBC.
+- [[https://github.com/troter/s2mai-oreo][s2mai-oreo]] :: S2Mai oreore extension.
 - [[https://github.com/troter/log4j-rotate][log4j-rotate]] :: Log4j rotate file appender.
 - [[https://bitbucket.org/troter/schema-update][schema-update]] :: Database schema migration tool.
 
