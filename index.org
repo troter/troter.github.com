@@ -37,6 +37,7 @@
 - [[https://github.com/troter/s2jdbc-master-slave][s2jdbc-master-slave]] :: Master-Slave support for S2JDBC.
 - [[https://github.com/troter/s2mai-oreo][s2mai-oreo]] :: S2Mai oreore extension.
 - [[https://github.com/troter/log4j-rotate][log4j-rotate]] :: Log4j rotate file appender.
+- [[https://bitbucket.org/troter/schema-update][schema-update]] :: Database schema migration tool.
 
 ** Maven Repository
 - release  :: [[http://troter.jp/maven2/release]] @<br/> [[https://github.com/troter/troter.github.com/tree/master/maven2/release]]
