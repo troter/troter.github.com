@@ -30,6 +30,7 @@
  - [[http://twilog.org/troter][Twilog]]
 - Hatena([[http://d.hatena.ne.jp/troter][id:troter]])
 - Github([[https://github.com/troter][troter]])
+- Bitbucket([[https://bitbucket.org/troter][troter]])
 
 * Projects
 - [[https://github.com/troter/tags-capture][tags-capture]] :: Simple capture library for JSP.
