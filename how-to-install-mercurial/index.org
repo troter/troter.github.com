@@ -229,16 +229,16 @@
 
   各ディストリビュージョンのパッケージからmercurialをインストールする事ができます。
 
-  2011/07/10時点でインストールされるバージョンは次の通りです。最新バージョンを利用したい場合はeasy_installもしくはソースコードからインストールする必要があります。
+  2011/09/04時点でインストールされるバージョンは次の通りです。最新バージョンを利用したい場合はeasy_installもしくはソースコードからインストールする必要があります。
 
   | ディストリビュージョン | mercurialのバージョン |
   |------------------------+-----------------------|
   | Debian squeeze         |                 1.6.4 |
   | Debian wheezy          |                 1.8.3 |
   | Ubuntu 11.04           |                 1.7.5 |
-  | Centos 5 (PRMforge)    |                 1.8.4 |
-  | Cygwin                 |                 1.7.5 |
+  | Centos 5 (Repoforge)   |                 1.9   |
   | Cygwin                 |                 1.8.1 |
+  | Cygwin                 |                 1.9.2 |
 
 *** Debian/Ubuntu
 
@@ -250,12 +250,12 @@
 
 *** CentOS
 
-  CentOSの公式リポジトリにmercurialのパッケージは存在しませんが、[[http://rpmrepo.org/RPMforge/][RPMforge]]を利用する事によってパッケージからインストールする事ができます。
+  CentOSの公式リポジトリにmercurialのパッケージは存在しませんが、[[http://repoforge.org/][Repoforge(旧名RPMforge)]]を利用する事によってパッケージからインストールする事ができます。
 
-  CentOS 5、アーキテクチャがx86_64の場合は次のコマンドでrpmforgeをインストールします。詳しくは http://rpmrepo.org/RPMforge/Using を参照してください。
+  CentOS 5、アーキテクチャがx86_64の場合は次のコマンドでrepoforgeをインストールします。詳しくは [[http://repoforge.org/use/]] を参照してください。
 
   #+BEGIN_SRC shell
-  % wget http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2.el5.rf.x86_64.rpm
+  % wget http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.2-2.el5.rf.x86_64.rpm
   % rpm -Uhv rpmforge-release-0.5.2-2.el5.rf.x86_64.rpm
   #+END_SRC
 
