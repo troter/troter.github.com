@@ -3,13 +3,14 @@
   <groupId>jp.troter</groupId>
   <artifactId>s2mai-oreo</artifactId>
   <versioning>
-    <release>0.1.3</release>
+    <release>0.1.4</release>
     <versions>
       <version>0.1.0</version>
       <version>0.1.1</version>
       <version>0.1.2</version>
       <version>0.1.3</version>
+      <version>0.1.4</version>
     </versions>
-    <lastUpdated>20111031100055</lastUpdated>
+    <lastUpdated>20111102045710</lastUpdated>
   </versioning>
 </metadata>
