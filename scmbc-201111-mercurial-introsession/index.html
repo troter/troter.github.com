@@ -10,8 +10,8 @@
     
     <title>Mercurial 入門セッション資料 - SCM Boot Camp #2 &mdash; SCMBC 2011.11 Mercurial Intro-Session 0.0.1 documentation</title>
     
-    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,9 +22,9 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="top" title="SCMBC 2011.11 Mercurial Intro-Session 0.0.1 documentation" href="#" /> 
   </head>
   <body>
@@ -94,7 +94,7 @@
 
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="_sources/index.txt"
+    <li><a href="sources/index.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
@@ -419,7 +419,7 @@ hg log -r "reverse(ancestors('BRANCH_NAME')) and not merge()"</pre>
 <p>古い順から、リビジョン A、B、C の順で履歴が記録されている場合、 A は B、B は C の親リビジョンとなります。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-b6ec128681c014a604a35f6049bc490c70909bc7.png" alt="digraph {
+<img src="images/graphviz-b6ec128681c014a604a35f6049bc490c70909bc7.png" alt="digraph {
   rankdir=&quot;LR&quot;
   A [ ]
   B [ ]
@@ -433,7 +433,7 @@ hg log -r "reverse(ancestors('BRANCH_NAME')) and not merge()"</pre>
 <p>このような表現をするのは、この状態で作業領域で作業 (ファイルの改変／追加等) を行い、 作業結果を記録 (＝ コミット) した場合、 新規に作成されるリビジョンの親は C になるからです。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-44ac5f96038672fc477d5e153d08a0aa9393cd74.png" alt="digraph {
+<img src="images/graphviz-44ac5f96038672fc477d5e153d08a0aa9393cd74.png" alt="digraph {
   rankdir=&quot;LR&quot;
   A [ ]
   B [ ]
@@ -457,7 +457,7 @@ hg log -r "reverse(ancestors('BRANCH_NAME')) and not merge()"</pre>
 次のグラフではリビジョン2がヘッドです。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-9b1aa8e456023dd9cfec59a0e82c46885ce77e37.png" alt="digraph {
+<img src="images/graphviz-9b1aa8e456023dd9cfec59a0e82c46885ce77e37.png" alt="digraph {
   rankdir=&quot;LR&quot;
   0 [ ]
   1 [ ]
@@ -478,7 +478,7 @@ Mercurial では(広義の)「ブランチ」 (branch: 枝分かれ) と呼び�
 リビジョン 2 の後で生成されたリビジョン 3 はブランチになります。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-bac0f1688d15e9675b3f266f894b6260e950da85.png" alt="digraph {
+<img src="images/graphviz-bac0f1688d15e9675b3f266f894b6260e950da85.png" alt="digraph {
   rankdir=&quot;LR&quot;
   0 [ ]
   1 [ ]
@@ -493,7 +493,7 @@ Mercurial では(広義の)「ブランチ」 (branch: 枝分かれ) と呼び�
 <p>ヘッドを親にして新たなリビジョンを作成した場合は、ブランチになりません。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-1fe4cb6d7d848b85fa2ec73dc38a91d4c984cc71.png" alt="digraph {
+<img src="images/graphviz-1fe4cb6d7d848b85fa2ec73dc38a91d4c984cc71.png" alt="digraph {
   rankdir=&quot;LR&quot;
   0 [ ]
   1 [ ]
@@ -516,7 +516,7 @@ Mercurial では(広義の)「ブランチ」 (branch: 枝分かれ) と呼び�
 <p>例として、次のリポジトリを2人(Alice, Bob)で作業した場合を考えます。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-e2aebc53067f117521589c45686c4ad051374a35.png" alt="digraph {
+<img src="images/graphviz-e2aebc53067f117521589c45686c4ad051374a35.png" alt="digraph {
   rankdir=&quot;BT&quot;
   c_0 [ label = &quot;0&quot; ]
   c_1 [ label = &quot;1&quot; ]
@@ -534,7 +534,7 @@ Mercurial では(広義の)「ブランチ」 (branch: 枝分かれ) と呼び�
 <p>まず作業するためにAliceとBobがリポジトリを複製(hg clone)します。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-aa5966430b814c79c0905b5ce0fe5fe0dc9752ff.png" alt="digraph {
+<img src="images/graphviz-aa5966430b814c79c0905b5ce0fe5fe0dc9752ff.png" alt="digraph {
   rankdir=&quot;BT&quot;
   c_0 [ label = &quot;0&quot; ]
   c_1 [ label = &quot;1&quot; ]
@@ -572,7 +572,7 @@ Mercurial では(広義の)「ブランチ」 (branch: 枝分かれ) と呼び�
 <p>Aliceが先に編集してコミットしました。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-bd128b0c70e1a3286edbdc76ba14b11d036b6417.png" alt="digraph {
+<img src="images/graphviz-bd128b0c70e1a3286edbdc76ba14b11d036b6417.png" alt="digraph {
   rankdir=&quot;BT&quot;
   c_0 [ label = &quot;0&quot; ]
   c_1 [ label = &quot;1&quot; ]
@@ -612,7 +612,7 @@ Mercurial では(広義の)「ブランチ」 (branch: 枝分かれ) と呼び�
 <p>Bobも編集を加えてコミットしました。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-809cfdc53bceb6ec58d9c53d644fcad4ac828d42.png" alt="digraph {
+<img src="images/graphviz-809cfdc53bceb6ec58d9c53d644fcad4ac828d42.png" alt="digraph {
   rankdir=&quot;BT&quot;
   c_0 [ label = &quot;0&quot; ]
   c_1 [ label = &quot;1&quot; ]
@@ -654,7 +654,7 @@ Mercurial では(広義の)「ブランチ」 (branch: 枝分かれ) と呼び�
 <p>Aliceは作業が完了したのでみんなに見てもらうように中央リポジトリに変更を反映します。(hg push)</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-43e15c559a21c04c137cd4502d64a02062267b9d.png" alt="digraph {
+<img src="images/graphviz-43e15c559a21c04c137cd4502d64a02062267b9d.png" alt="digraph {
   rankdir=&quot;BT&quot;
   c_0 [ label = &quot;0&quot; ]
   c_1 [ label = &quot;1&quot; ]
@@ -700,7 +700,7 @@ Mercurial では(広義の)「ブランチ」 (branch: 枝分かれ) と呼び�
 理由は、中央リポジトリにマルチプルヘッドが作成されてしまうからです。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-90dd5ffb053f66c19ff2758bf55f0798a372fb1f.png" alt="digraph {
+<img src="images/graphviz-90dd5ffb053f66c19ff2758bf55f0798a372fb1f.png" alt="digraph {
   rankdir=&quot;BT&quot;
   c_0 [ label = &quot;0&quot; ]
   c_1 [ label = &quot;1&quot; ]
@@ -748,7 +748,7 @@ Mercurial では(広義の)「ブランチ」 (branch: 枝分かれ) と呼び�
 試して見ましょう。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-791338c008f38dc0b9f47b6d0a9c9cf2ef2daa2a.png" alt="digraph {
+<img src="images/graphviz-791338c008f38dc0b9f47b6d0a9c9cf2ef2daa2a.png" alt="digraph {
   rankdir=&quot;BT&quot;
   c_0 [ label = &quot;0&quot; ]
   c_1 [ label = &quot;1&quot; ]
@@ -803,7 +803,7 @@ Mercurial では(広義の)「ブランチ」 (branch: 枝分かれ) と呼び�
 <p>先ほどの新Bobリポジトリでマージ(hg merge)を行うと次の様になります。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-64597cc57d824e3d8bd2b813e422623970b59fb3.png" alt="digraph {
+<img src="images/graphviz-64597cc57d824e3d8bd2b813e422623970b59fb3.png" alt="digraph {
   rankdir=&quot;BT&quot;
   b_0 [ label = &quot;0&quot; ]
   b_1 [ label = &quot;1&quot; ]
@@ -827,7 +827,7 @@ Mercurial では(広義の)「ブランチ」 (branch: 枝分かれ) と呼び�
 この状態でコミットすると、マージ完了です。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-705f652cf0bb7f1bbe708ae751422407dc0fb3e8.png" alt="digraph {
+<img src="images/graphviz-705f652cf0bb7f1bbe708ae751422407dc0fb3e8.png" alt="digraph {
   rankdir=&quot;BT&quot;
   b_0 [ label = &quot;0&quot; ]
   b_1 [ label = &quot;1&quot; ]
@@ -852,7 +852,7 @@ Mercurial では(広義の)「ブランチ」 (branch: 枝分かれ) と呼び�
 <p>この状態で初めて中央リポジトリに変更を反映できます。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-9ef103a03fe7be599a97eac86e801ceaceb78680.png" alt="digraph {
+<img src="images/graphviz-9ef103a03fe7be599a97eac86e801ceaceb78680.png" alt="digraph {
   rankdir=&quot;BT&quot;
   c_0 [ label = &quot;0&quot; ]
   c_1 [ label = &quot;1&quot; ]
@@ -912,7 +912,7 @@ Mercurial では(広義の)「ブランチ」 (branch: 枝分かれ) と呼び�
 <p>まずBobがコミットする前の状態です。この時点で次コミットされる変更はリビジョンBです。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-82e2ad456fdb4ac8196bd2affd262e3f43c9f3db.png" alt="digraph {
+<img src="images/graphviz-82e2ad456fdb4ac8196bd2affd262e3f43c9f3db.png" alt="digraph {
   rankdir=&quot;BT&quot;
   c_0 [ label = &quot;0&quot; ]
   c_1 [ label = &quot;1&quot; ]
@@ -946,7 +946,7 @@ Mercurial では(広義の)「ブランチ」 (branch: 枝分かれ) と呼び�
 Bobの作業領域がリビジョンAに更新され、これからコミットする変更はリビジョンCへと変化します。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-eb8a50b26c0a2d7cac37c164302eca79cf545c89.png" alt="digraph {
+<img src="images/graphviz-eb8a50b26c0a2d7cac37c164302eca79cf545c89.png" alt="digraph {
   rankdir=&quot;BT&quot;
   c_0 [ label = &quot;0&quot; ]
   c_1 [ label = &quot;1&quot; ]
@@ -982,7 +982,7 @@ Bobの作業領域がリビジョンAに更新され、これからコミット�
 <p>最後に「Subversionが自動的にマージした変更」に問題が無いことを確認しリビジョンCをコミットします。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-ed0386a28f6956c03350b01d8fc7a6841b7b5c47.png" alt="digraph {
+<img src="images/graphviz-ed0386a28f6956c03350b01d8fc7a6841b7b5c47.png" alt="digraph {
   rankdir=&quot;BT&quot;
   c_0 [ label = &quot;0&quot; ]
   c_1 [ label = &quot;1&quot; ]
@@ -1025,7 +1025,7 @@ Bobの作業領域がリビジョンAに更新され、これからコミット�
 <p>Mercurialの場合を再度確認してみましょう。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-f54af103094ade3933dc6e169986aebe3a25e35f.png" alt="digraph {
+<img src="images/graphviz-f54af103094ade3933dc6e169986aebe3a25e35f.png" alt="digraph {
   rankdir=&quot;BT&quot;
   b_0 [ label = &quot;0&quot; ]
   b_1 [ label = &quot;1&quot; ]
@@ -1071,7 +1071,7 @@ Bobの作業領域がリビジョンAに更新され、これからコミット�
 リビジョン 3 が &#8220;RELEASE&#8221; という名前付きブランチに属します。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-22985e7c0323eeee81ab11691311bd5c2cc76d7e.png" alt="digraph {
+<img src="images/graphviz-22985e7c0323eeee81ab11691311bd5c2cc76d7e.png" alt="digraph {
   rankdir=&quot;LR&quot;
   0 [ ]
   1 [ ]
@@ -1124,7 +1124,7 @@ Mercurial での「名前付きブランチ」とほぼ等価と考えてよい�
 この場合、いわゆる「ブランチ」状態は発生しません。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-86cd5b0a26717a4eee308a1c874b5f6c60b31303.png" alt="digraph {
+<img src="images/graphviz-86cd5b0a26717a4eee308a1c874b5f6c60b31303.png" alt="digraph {
   rankdir=&quot;LR&quot;
   0 [ ]
   1 [ ]
@@ -1155,7 +1155,7 @@ Mercurial での「名前付きブランチ」とほぼ等価と考えてよい�
 長期的なスパンで見た場合には「ブランチしている」と言えるでしょう。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-d98c35be7399ee6fc2782556ac75491ca81fc7c2.png" alt="digraph {
+<img src="images/graphviz-d98c35be7399ee6fc2782556ac75491ca81fc7c2.png" alt="digraph {
   rankdir=&quot;LR&quot;
   0 [ ]
   1 [ ]
@@ -1190,7 +1190,7 @@ Mercurial での「名前付きブランチ」とほぼ等価と考えてよい�
 <p>2つの名前付きブランチ B_one と B_two を想定します。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-02240f38c6d714399dacdff756b6cf94acfef91f.png" alt="digraph {
+<img src="images/graphviz-02240f38c6d714399dacdff756b6cf94acfef91f.png" alt="digraph {
   rankdir=&quot;LR&quot;
   0 [ ]
   1 [ ]
@@ -1222,7 +1222,7 @@ Mercurial での「名前付きブランチ」とほぼ等価と考えてよい�
 マージによって生成されるリビジョンは B_one ブランチに属します。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-7af82b1dc16b0056757c8631d5f814cdd5810016.png" alt="digraph {
+<img src="images/graphviz-7af82b1dc16b0056757c8631d5f814cdd5810016.png" alt="digraph {
   rankdir=&quot;LR&quot;
   0 [ ]
   1 [ ]
@@ -1258,7 +1258,7 @@ Mercurial での「名前付きブランチ」とほぼ等価と考えてよい�
 マージによって生成されるリビジョンは B_two ブランチに属します。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-1ca5565f4509085151bf07df832fde832df83d07.png" alt="digraph {
+<img src="images/graphviz-1ca5565f4509085151bf07df832fde832df83d07.png" alt="digraph {
   rankdir=&quot;LR&quot;
   0 [ ]
   1 [ ]
@@ -1308,7 +1308,7 @@ Mercurial での「名前付きブランチ」とほぼ等価と考えてよい�
 開発ブランチ、リリースブランチ、メンテナンスブランチなど、息の長いブランチとして利用します。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-fa136f8b485a1c29912ae312a326e27cc097c693.png" alt="digraph {
+<img src="images/graphviz-fa136f8b485a1c29912ae312a326e27cc097c693.png" alt="digraph {
   rankdir=&quot;LR&quot;
   s_0 [ ]
   s_1 [ ]
@@ -1345,7 +1345,7 @@ Mercurial での「名前付きブランチ」とほぼ等価と考えてよい�
 <p>次の例では、リビジョンd_2、リビジョンd_3、リビジョンd_4を別ブランチにしています。</p>
 <blockquote>
 <div><p class="graphviz">
-<img src="_images/graphviz-4514a5c95fd3a2ce15b663455374ce2d8c1aa547.png" alt="digraph {
+<img src="images/graphviz-4514a5c95fd3a2ce15b663455374ce2d8c1aa547.png" alt="digraph {
   rankdir=&quot;LR&quot;
   s_0 [ ]
   s_1 [ ]
