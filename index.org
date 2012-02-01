@@ -51,3 +51,4 @@
 - [[./timstudy-201110-memocurial-introduction][timstudy 201110 発表資料 Memocurialの紹介]]
 - [[./timstudy-201110-gnu-screen-introduction][timstudy 201110 発表資料 GNU Screenの紹介]]
 - [[./scmbc-201111-mercurial-introsession][SCMBC #2 Mercurial 入門セッション資料]]
+- [[./timstudy-201202-jenkins-introduction][timstudy 201202 発表資料 Jenkinsの紹介]]
