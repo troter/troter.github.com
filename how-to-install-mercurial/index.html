@@ -45,48 +45,48 @@
 <li><a class="reference internal" href="#id1">はじめに</a></li>
 <li><a class="reference internal" href="#mercurial">Mercurialの入手方法</a></li>
 <li><a class="reference internal" href="#windows">Windowsの場合</a><ul>
-<li><a class="reference internal" href="#tortoisehg">TortoiseHgをインストール</a><ul>
+<li><a class="reference internal" href="#tortoisehg">TortoiseHg</a><ul>
 <li><a class="reference internal" href="#id3">インストール</a></li>
 <li><a class="reference internal" href="#id4">インストール後の確認</a></li>
 <li><a class="reference internal" href="#kdiff3winmerge">KDiff3の代わりにWinMergeを利用する</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#msi-installer">MSI installerを使って</a><ul>
+<li><a class="reference internal" href="#inno-setup-installer">Inno Setup installer</a><ul>
 <li><a class="reference internal" href="#id5">インストール</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#inno-setup-installer">Inno Setup installerを使って</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#macosx">MacOSXの場合</a><ul>
-<li><a class="reference internal" href="#machg-osx-10-6">MacHgをインストール(OSX 10.6+)</a><ul>
+<li><a class="reference internal" href="#machg-osx-10-6">MacHg(OSX 10.6+)</a><ul>
 <li><a class="reference internal" href="#id6">インストール</a></li>
 <li><a class="reference internal" href="#id7">インストール後の確認</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#mac-official">公式バイナリから</a></li>
-<li><a class="reference internal" href="#macports">MacPortsを使って</a></li>
-<li><a class="reference internal" href="#homebrew">Homebrewを使って</a></li>
+<li><a class="reference internal" href="#sourcetree-osx-10-6">SourceTree(OSX 10.6+)</a></li>
+<li><a class="reference internal" href="#mac-official">公式バイナリ</a></li>
+<li><a class="reference internal" href="#macports">MacPorts</a></li>
+<li><a class="reference internal" href="#homebrew">Homebrew</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#linux-cygwin">Linux/Cygwinの場合</a><ul>
-<li><a class="reference internal" href="#id12">各ディストリビュージョンのパッケージから</a><ul>
+<li><a class="reference internal" href="#id12">各ディストリビューションのパッケージから</a><ul>
 <li><a class="reference internal" href="#debian-ubuntu">Debian/Ubuntu</a></li>
 <li><a class="reference internal" href="#centos">CentOS</a></li>
 <li><a class="reference internal" href="#cygwin">Cygwin</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#easy-install">easy_installを使って</a><ul>
+<li><a class="reference internal" href="#easy-install">easy_install</a><ul>
 <li><a class="reference internal" href="#id14">easy_installのインストール</a></li>
 <li><a class="reference internal" href="#easy-intallmercurial">easy_intallでmercurialをインストール</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#pip">pipを使って</a><ul>
+<li><a class="reference internal" href="#pip">pip</a><ul>
 <li><a class="reference internal" href="#id17">pipのインストール</a></li>
 <li><a class="reference internal" href="#pipmercurial">pipでmercurialをインストール</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id18">ソースから</a><ul>
+<li><a class="reference internal" href="#id18">ソースコード</a><ul>
 <li><a class="reference internal" href="#docutils">docutilsのインストール</a></li>
 <li><a class="reference internal" href="#id20">mercurialのソースコードアーカイブの取得</a></li>
 <li><a class="reference internal" href="#id21">ユーザ毎にインストール</a></li>
@@ -131,13 +131,14 @@
 <div class="section" id="id1">
 <h2>はじめに<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>このドキュメントは <a class="reference external" href="http://kokucheese.com/event/index/13468/">SCM Boot Camp in Tokyo(2011-07-30)</a> 配布資料の原稿です。</li>
+<li>このドキュメントは <a class="reference external" href="http://kokucheese.com/event/index/13468/">SCM Boot Camp in Tokyo(2011-07-30)</a> 配布資料です。</li>
 <li>mercurialのインストールドキュメントは <a class="reference external" href="https://bitbucket.org/troter/scmbc-2011.07-how-to-install-mercurial">bitbucketに移動しました</a></li>
+<li>GUIクライアント、CUIクライアントの両方をインストールしてください。</li>
 </ul>
 </div>
 <div class="section" id="mercurial">
 <h2>Mercurialの入手方法<a class="headerlink" href="#mercurial" title="Permalink to this headline">¶</a></h2>
-<p>次のURLから取得できます。</p>
+<p>次のURLから取得できます。2012/02/12時点の最新はMercurial-2.1です。</p>
 <ul class="simple">
 <li><a class="reference external" href="http://mercurial.selenic.com/downloads/">http://mercurial.selenic.com/downloads/</a></li>
 </ul>
@@ -147,28 +148,38 @@
 <p>Windowsの場合、次の選択肢からMercurialをインストールする方法を選ぶことが出来ます。TortoiseHgの利用がおすすめです。</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="33%" />
-<col width="67%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="40%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">要求</th>
-<th class="head">インストール方法</th>
+<tr class="row-odd"><th class="head">クライアント</th>
+<th class="head">GUI</th>
+<th class="head">CUI</th>
+<th class="head">備考</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>GUIクライアントを利用したい場合(万人におすすめ)</td>
-<td><a class="reference internal" href="#windows-tortoisehg"><em>TortoiseHgをインストール</em></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#windows-tortoisehg"><em>TortoiseHg</em></a></td>
+<td>○</td>
+<td>○</td>
+<td>万人におすすめ</td>
 </tr>
-<tr class="row-odd"><td>CUIクライアント(Windows版バイナリ)を利用したい場合</td>
-<td><a class="reference internal" href="#windows-msi-installer"><em>MSI installerを使って</em></a> もしくは <a class="reference internal" href="#windows-inno-setup-installer"><em>Inno Setup installerを使って</em></a>  を使ってインストール</td>
+<tr class="row-odd"><td><a class="reference internal" href="#windows-inno-setup-installer"><em>Inno Setup installer</em></a></td>
+<td>×</td>
+<td>○</td>
+<td>管理者権限が不要</td>
 </tr>
-<tr class="row-even"><td>CUIクライアント(Cygwin)を利用したい場合</td>
-<td><a class="reference internal" href="#linux-cygwin"><em>Linux/Cygwinの場合</em></a> を参照</td>
+<tr class="row-even"><td><a class="reference internal" href="#linux-cygwin"><em>Cygwin mercurial</em></a></td>
+<td>×</td>
+<td>○</td>
+<td>Cygwin</td>
 </tr>
 </tbody>
 </table>
 <div class="section" id="tortoisehg">
-<span id="windows-tortoisehg"></span><h3>TortoiseHgをインストール<a class="headerlink" href="#tortoisehg" title="Permalink to this headline">¶</a></h3>
+<span id="windows-tortoisehg"></span><h3>TortoiseHg<a class="headerlink" href="#tortoisehg" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="http://tortoisehg.bitbucket.org/">TortoiseHg</a> はMercuialのGUIクライアント(TortoiseHg Workbench)とWindowsエクスプローラに統合するためのシェル拡張を含んだパッケージです。
 WindowsでMercurialを利用したい場合はTortoiseHgをインストールすることをおすすめします。</p>
 <p>TortoiseHgにはCUI Windows版バイナリ相当のファイルも同梱されていますので、CUIで利用するためにCUI Windows版バイナリをインストールする必要はありません。</p>
@@ -248,60 +259,60 @@ WindowsでMercurialを利用したい場合はTortoiseHgをインストールす
 </div></blockquote>
 </div>
 </div>
-<div class="section" id="msi-installer">
-<span id="windows-msi-installer"></span><h3>MSI installerを使って<a class="headerlink" href="#msi-installer" title="Permalink to this headline">¶</a></h3>
-<p>GUIシェル拡張は不要でhgコマンドのみインストールしたい場合は MSI installer を利用してインストールします。</p>
-<p>TorotiseHgにはCUI Windows版バイナリ相当のファイルも同梱されています。TortoiseHgをインストール済みの場合は別途インストールする必要はありません。</p>
+<div class="section" id="inno-setup-installer">
+<span id="windows-inno-setup-installer"></span><h3>Inno Setup installer<a class="headerlink" href="#inno-setup-installer" title="Permalink to this headline">¶</a></h3>
+<p>GUIシェル拡張は不要でhgコマンドのみインストールしたい場合は Inno Setup installer を利用してインストールします。</p>
 <div class="section" id="id5">
 <h4>インストール<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <ol class="arabic simple">
-<li>まず <a class="reference external" href="http://mercurial.selenic.com/downloads/">http://mercurial.selenic.com/downloads/</a> からMSI installerダウンロードします。</li>
+<li>まず <a class="reference external" href="http://mercurial.selenic.com/downloads/">http://mercurial.selenic.com/downloads/</a> からInno Setup installerダウンロードします。</li>
 </ol>
 <blockquote>
-<div><img alt="MSIインストーラのダウンロード" src="images/msi-installer-download.png" />
+<div><img alt="Inno Setup installerのダウンロード" src="images/inno-setup-installer-download.png" />
 </div></blockquote>
 <ol class="arabic simple" start="2">
-<li>ダウンロードしたMSIインストーラを実行します。</li>
+<li>ダウンロードしたInno Setup installerを実行します。</li>
 </ol>
 <blockquote>
-<div><img alt="MSIインストーラの実行" src="images/msi-installer-start.png" />
+<div><img alt="Inno Setup installerの実行" src="images/inno-setup-installer-start.png" />
 </div></blockquote>
 <ol class="arabic simple" start="3">
 <li>ライセンスに同意します。問題無ければ「Next」をクリックします。</li>
 </ol>
 <blockquote>
-<div><img alt="MSIインストーラ、ライセンスに同意" src="images/msi-installer-license-agreement.png" />
+<div><img alt="Inno Setup installer、ライセンスに同意" src="images/inno-setup-installer-license-agreement.png" />
 </div></blockquote>
 <ol class="arabic simple" start="4">
 <li>インストール内容の確認を行います。インストール先を変更する場合は「Browse」を。問題無ければ「Next」をクリックします。</li>
 </ol>
 <blockquote>
-<div><img alt="MSIインストーラ、インストール内容の確認" src="images/msi-installer-custom-setup.png" />
+<div><img alt="Inno Setup installer、インストール内容の確認" src="images/inno-setup-installer-custom-setup.png" />
 </div></blockquote>
 <ol class="arabic simple" start="5">
 <li>インストール前の確認です。問題無ければ「Install」をクリックします。</li>
 </ol>
 <blockquote>
-<div><img alt="MSIインストーラ、インストール前の確認" src="images/msi-installer-ready-to-install.png" />
+<div><img alt="Inno Setup installer、インストール前の確認" src="images/inno-setup-installer-ready-to-install.png" />
 </div></blockquote>
 <ol class="arabic simple" start="6">
 <li>インストールが開始されます。</li>
 </ol>
 <blockquote>
-<div><img alt="MSIインストーラ、インストール" src="images/msi-installer-installing.png" />
+<div><img alt="Inno Setup installer、インストール" src="images/inno-setup-installer-installing.png" />
 </div></blockquote>
 <ol class="arabic simple" start="7">
+<li>問題が無ければメッセージがでます。</li>
+</ol>
+<blockquote>
+<div><img alt="Inno Setup installer、情報" src="images/inno-setup-installer-information.png" />
+</div></blockquote>
+<ol class="arabic simple" start="8">
 <li>問題が無ければインストール完了です。</li>
 </ol>
 <blockquote>
-<div><img alt="MSIインストーラ、インストール完了" src="images/msi-installer-finish.png" />
+<div><img alt="Inno Setup installer、インストール完了" src="images/inno-setup-installer-finish.png" />
 </div></blockquote>
 </div>
-</div>
-<div class="section" id="inno-setup-installer">
-<span id="windows-inno-setup-installer"></span><h3>Inno Setup installerを使って<a class="headerlink" href="#inno-setup-installer" title="Permalink to this headline">¶</a></h3>
-<p>MSI Installerは管理者権限が必要でしたが、Inno Setup installerを利用すると一般ユーザでもインストールが行えます。</p>
-<p>インストール方法はMSI Installerと同じですので、ここでは説明を割愛します。</p>
 </div>
 </div>
 <div class="section" id="macosx">
@@ -309,26 +320,48 @@ WindowsでMercurialを利用したい場合はTortoiseHgをインストールす
 <p>MacOSXの場合、次の選択肢からMercurialをインストールする方法を選ぶことが出来ます。</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="27%" />
-<col width="73%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="40%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">要求</th>
-<th class="head">インストール方法</th>
+<tr class="row-odd"><th class="head">クライアント</th>
+<th class="head">GUI</th>
+<th class="head">CUI</th>
+<th class="head">備考</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>GUIクライアントを利用したい場合</td>
-<td><a class="reference internal" href="#mac-machg"><em>MacHgをインストール(OSX 10.6+)</em></a> をインストール</td>
+<tr class="row-even"><td><a class="reference internal" href="#mac-machg"><em>MacHg</em></a></td>
+<td>○</td>
+<td>×</td>
+<td>10.6+</td>
 </tr>
-<tr class="row-odd"><td>CUIクライアントを利用したい場合</td>
-<td><a class="reference internal" href="#mac-official"><em>公式バイナリ</em></a> 、 <a class="reference internal" href="#mac-macports"><em>MacPorts</em></a> 、 <a class="reference internal" href="#mac-homebrew"><em>Homebrew</em></a> の中から好きなもの</td>
+<tr class="row-odd"><td><a class="reference internal" href="#mac-sourcetree"><em>SourceTree</em></a></td>
+<td>○</td>
+<td>×</td>
+<td>10.6+</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#mac-official"><em>公式バイナリ</em></a></td>
+<td>×</td>
+<td>○</td>
+<td>10.6+</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#mac-macports"><em>MacPorts</em></a></td>
+<td>×</td>
+<td>○</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#mac-homebrew"><em>Homebrew</em></a></td>
+<td>×</td>
+<td>○</td>
+<td>&nbsp;</td>
 </tr>
 </tbody>
 </table>
-<p>このドキュメントでは説明しませんが、 <a class="reference external" href="http://www.sourcetreeapp.com/">SourceTree</a> という有償のクライアント(無償のトライアル版有り)も存在します</p>
 <div class="section" id="machg-osx-10-6">
-<span id="mac-machg"></span><h3>MacHgをインストール(OSX 10.6+)<a class="headerlink" href="#machg-osx-10-6" title="Permalink to this headline">¶</a></h3>
+<span id="mac-machg"></span><h3>MacHg(OSX 10.6+)<a class="headerlink" href="#machg-osx-10-6" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="http://jasonfharris.com/machg/">MacHg</a>  はTortoiseHg Workbenchに似たGUIクライアントです。無償で利用できますのでまずはじめに試すことをおすすめします。</p>
 <div class="section" id="id6">
 <h4>インストール<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
@@ -365,27 +398,29 @@ WindowsでMercurialを利用したい場合はTortoiseHgをインストールす
 </div></blockquote>
 </div>
 </div>
+<div class="section" id="sourcetree-osx-10-6">
+<span id="mac-sourcetree"></span><h3>SourceTree(OSX 10.6+)<a class="headerlink" href="#sourcetree-osx-10-6" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://www.sourcetreeapp.com/">SourceTree</a> はMercurial,GitのGUIクライアントです。以前は有償のソフトウェアでしたが、Atlassianに買収後は無償提供されるようになりました。</p>
+<p>MacAppStoreからインストールする事ができます。</p>
+</div>
 <div class="section" id="mac-official">
-<span id="id8"></span><h3>公式バイナリから<a class="headerlink" href="#mac-official" title="Permalink to this headline">¶</a></h3>
+<span id="id8"></span><h3>公式バイナリ<a class="headerlink" href="#mac-official" title="Permalink to this headline">¶</a></h3>
 <p>TODO</p>
 </div>
 <div class="section" id="macports">
-<span id="mac-macports"></span><h3>MacPortsを使って<a class="headerlink" href="#macports" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="http://www.macports.org/">MacPorts</a> はFreeBSDのportsに似たパッケージ管理システムです。portsでインストールする事が出来ます。</p>
+<span id="mac-macports"></span><h3>MacPorts<a class="headerlink" href="#macports" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://www.macports.org/">MacPorts</a> はFreeBSDのportsに似たパッケージ管理システムです。portsでインストールする事ができます。</p>
 <blockquote>
 <div><div class="highlight-python"><pre>% ports install mercurial</pre>
 </div>
 </div></blockquote>
 </div>
 <div class="section" id="homebrew">
-<span id="mac-homebrew"></span><h3>Homebrewを使って<a class="headerlink" href="#homebrew" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="http://mxcl.github.com/homebrew/">Homebrew</a> にはmercurialのパッケージは用意されていません。
-homebrewを利用してpythonとpythonのパッケージインストーラであるpipをインストール後、pipを利用してmercurialをインストールする必要があります。</p>
-<p><a class="reference internal" href="#linux-cygwin-pip"><em>pipを使って</em></a> も参照してください。</p>
+<span id="mac-homebrew"></span><h3>Homebrew<a class="headerlink" href="#homebrew" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://mxcl.github.com/homebrew/">Homebrew</a> はMacPortsに似たパッケージ管理システムです。brewでインストールする事ができます。</p>
 <blockquote>
 <div><div class="highlight-python"><pre>% brew intall python
-% brew intall pip
-% pip intall mercurial</pre>
+% brew intall mercurial</pre>
 </div>
 </div></blockquote>
 </div>
@@ -393,16 +428,16 @@ homebrewを利用してpythonとpythonのパッケージインストーラであ
 <div class="section" id="linux-cygwin">
 <span id="id11"></span><h2>Linux/Cygwinの場合<a class="headerlink" href="#linux-cygwin" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id12">
-<h3>各ディストリビュージョンのパッケージから<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
-<p>各ディストリビュージョンのパッケージからmercurialをインストールする事ができます。</p>
-<p>2011/09/04時点でインストールされるバージョンは次の通りです。最新バージョンを利用したい場合はeasy_installもしくはソースコードからインストールする必要があります。</p>
+<h3>各ディストリビューションのパッケージから<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>各ディストリビューションのパッケージからmercurialをインストールする事ができます。</p>
+<p>2012/02/12時点でインストールされるバージョンは次の通りです。最新バージョンを利用したい場合はeasy_installもしくはソースコードからインストールする必要があります。</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="50%" />
 <col width="50%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">ディストリビュージョン</th>
+<tr class="row-odd"><th class="head">ディストリビューション</th>
 <th class="head">mercurialのバージョン</th>
 </tr>
 </thead>
@@ -411,19 +446,25 @@ homebrewを利用してpythonとpythonのパッケージインストーラであ
 <td>1.6.4</td>
 </tr>
 <tr class="row-odd"><td>Debian wheezy</td>
-<td>1.8.3</td>
+<td>2.0.2</td>
 </tr>
-<tr class="row-even"><td>Ubuntu 11.04</td>
+<tr class="row-even"><td>Ubuntu 11.04 (natty)</td>
 <td>1.7.5</td>
 </tr>
-<tr class="row-odd"><td>Centos 5 (Repoforge)</td>
-<td>1.9</td>
+<tr class="row-odd"><td>Ubuntu 11.10 (oneiric)</td>
+<td>1.9.1</td>
+</tr>
+<tr class="row-even"><td>Centos 5 (Repoforge)</td>
+<td>2.0.2</td>
+</tr>
+<tr class="row-odd"><td>Centos 6 (Repoforge)</td>
+<td>2.0.2</td>
 </tr>
 <tr class="row-even"><td>Cygwin</td>
-<td>1.8.1</td>
+<td>1.9.2</td>
 </tr>
 <tr class="row-odd"><td>Cygwin</td>
-<td>1.9.2</td>
+<td>1.9.3</td>
 </tr>
 </tbody>
 </table>
@@ -457,7 +498,7 @@ homebrewを利用してpythonとpythonのパッケージインストーラであ
 </div>
 </div>
 <div class="section" id="easy-install">
-<h3>easy_installを使って<a class="headerlink" href="#easy-install" title="Permalink to this headline">¶</a></h3>
+<h3>easy_install<a class="headerlink" href="#easy-install" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="http://pypi.python.org/pypi/setuptools">easy_install</a> は <a class="reference external" href="http://pypi.python.org/pypi">PyPI</a> の簡易インストーラです。システムのpythonを利用した場合、/usr/binにインストールするので気をつけてください。</p>
 <div class="section" id="id14">
 <h4>easy_installのインストール<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
@@ -484,7 +525,7 @@ homebrewを利用してpythonとpythonのパッケージインストーラであ
 </div>
 </div>
 <div class="section" id="pip">
-<span id="linux-cygwin-pip"></span><h3>pipを使って<a class="headerlink" href="#pip" title="Permalink to this headline">¶</a></h3>
+<span id="linux-cygwin-pip"></span><h3>pip<a class="headerlink" href="#pip" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="http://pypi.python.org/pypi/pip">pip</a> はeasy_installを置き換えるパッケージインストーラです。パッケージの検索、パッケージのアンインストールなど豊富な機能を備えています。</p>
 <div class="section" id="id17">
 <h4>pipのインストール<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
@@ -510,7 +551,7 @@ homebrewを利用してpythonとpythonのパッケージインストーラであ
 </div>
 </div>
 <div class="section" id="id18">
-<h3>ソースから<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<h3>ソースコード<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
 <p>mercurial 1.4以降は <a class="reference external" href="http://docutils.sourceforge.net/">docutils</a> というパッケージに依存しています。easy_installやpipを利用する場合は依存関係解決の中で自動的にインストールされますが、ソースからインストールする場合は自前でインストールする必要があります。</p>
 <div class="section" id="docutils">
 <h4>docutilsのインストール<a class="headerlink" href="#docutils" title="Permalink to this headline">¶</a></h4>
@@ -521,8 +562,8 @@ homebrewを利用してpythonとpythonのパッケージインストーラであ
 </div></blockquote>
 <p>ソースコードからインストールする場合は、 <a class="reference external" href="http://docutils.sourceforge.net/">docutils</a> のサイトからアーカイブを取得します。</p>
 <blockquote>
-<div><div class="highlight-python"><pre>% tar zxvf docutils-0.8.tar.gz
-% cd docutils-0.8
+<div><div class="highlight-python"><pre>% tar zxvf docutils-0.8.1.tar.gz
+% cd docutils-0.8.1
 % ./setup.py install</pre>
 </div>
 </div></blockquote>
@@ -531,9 +572,9 @@ homebrewを利用してpythonとpythonのパッケージインストーラであ
 <h4>mercurialのソースコードアーカイブの取得<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h4>
 <p>ソースコードアーカイブを取得、展開します。</p>
 <blockquote>
-<div><div class="highlight-python"><pre>% curl -O http://mercurial.selenic.com/release/mercurial-1.9.tar.gz
-% tar zxvf mercurial-1.9.tar.gz
-% cd mercurial-1.9</pre>
+<div><div class="highlight-python"><pre>% curl -O http://mercurial.selenic.com/release/mercurial-2.1.tar.gz
+% tar zxvf mercurial-2.1.tar.gz
+% cd mercurial-2.1</pre>
 </div>
 </div></blockquote>
 <p>mercurialにはconfigureスクリプトは同梱されていないので、適切にmakeコマンドに引数を与えてインストールします</p>
