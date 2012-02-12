@@ -1,0 +1,460 @@
+=================================================
+ How to install Mercurial - SCM Boot Camp #1
+=================================================
+
+はじめに
+--------
+- このドキュメントは `SCM Boot Camp in Tokyo(2011-07-30)`_ 配布資料の原稿です。
+- mercurialのインストールドキュメントは `bitbucketに移動しました`_
+
+.. _`SCM Boot Camp in Tokyo(2011-07-30)`: http://kokucheese.com/event/index/13468/
+.. _`bitbucketに移動しました`: https://bitbucket.org/troter/scmbc-2011.07-how-to-install-mercurial
+
+
+Mercurialの入手方法
+-------------------
+次のURLから取得できます。
+
+- http://mercurial.selenic.com/downloads/
+
+Windowsの場合
+-------------
+Windowsの場合、次の選択肢からMercurialをインストールする方法を選ぶことが出来ます。TortoiseHgの利用がおすすめです。
+
+.. list-table::
+   :widths: 10 20
+   :header-rows: 1
+
+   * - 要求
+     - インストール方法
+   * - GUIクライアントを利用したい場合(万人におすすめ)
+     - :ref:`TortoiseHgをインストール<windows_tortoisehg>`
+   * - CUIクライアント(Windows版バイナリ)を利用したい場合
+     - :ref:`MSI installerを使って<windows_msi_installer>` もしくは :ref:`Inno Setup installerを使って<windows_inno_setup_installer>`  を使ってインストール
+   * - CUIクライアント(Cygwin)を利用したい場合
+     - :ref:`Linux/Cygwinの場合<linux_cygwin>` を参照
+
+.. _windows_tortoisehg:
+
+TortoiseHgをインストール
+^^^^^^^^^^^^^^^^^^^^^^^^
+`TortoiseHg`_ はMercuialのGUIクライアント(TortoiseHg Workbench)とWindowsエクスプローラに統合するためのシェル拡張を含んだパッケージです。
+WindowsでMercurialを利用したい場合はTortoiseHgをインストールすることをおすすめします。
+
+TortoiseHgにはCUI Windows版バイナリ相当のファイルも同梱されていますので、CUIで利用するためにCUI Windows版バイナリをインストールする必要はありません。
+
+TortoiseHgインストール後、OSの再起動は必要ありません。
+
+.. _`TortoiseHg`: http://tortoisehg.bitbucket.org/
+
+インストール
+""""""""""""
+1. まず http://mercurial.selenic.com/downloads/ からTortoiseHgのインストーラをダウンロードします。
+
+  .. image:: _static/tortoisehg-download.png
+     :alt: TortoiseHgのダウンロード
+
+2. ダウンロードしたTortoiseHgインストーラを実行します。
+
+  .. image:: _static/tortoisehg-installer-start.png
+     :alt: TortoiseHgインストーラの実行
+
+3. ライセンスに同意します。問題無ければ「Next」をクリックします。
+
+  .. image:: _static/tortoisehg-installer-license-agreement.png
+     :alt: TortoiseHgインストーラ、ライセンスに同意
+
+4. インストール内容の確認を行います。インストール先を変更する場合は「Browse」を。問題無ければ「Next」をクリックします。
+
+  .. image:: _static/tortoisehg-installer-custom-setup.png
+     :alt: TortoiseHgインストーラ、インストール内容の確認
+
+5. インストール前の確認です。問題無ければ「Install」をクリックします。
+
+  .. image:: _static/tortoisehg-installer-ready-to-install.png
+     :alt: TortoiseHgインストーラ、インストール前の確認
+
+6. インストールが開始されます。
+
+  .. image:: _static/tortoisehg-installer-installing.png
+     :alt: TortoiseHgインストーラ、インストール
+
+7. インストール時にエクスプローラの再起動を要求されます。問題無ければ「OK」をクリックします。
+
+  .. image:: _static/tortoisehg-installer-explorer-restart-request.png
+     :alt: TortoiseHgインストーラ、エクスプローラの再起動
+
+8. 問題が無ければインストール完了です。
+
+  .. image:: _static/tortoisehg-installer-finish.png
+     :alt: TortoiseHgインストーラ、インストール完了
+
+インストール後の確認
+""""""""""""""""""""
+エクスプローラの右クリックメニューを確認してみましょう。
+
+  .. image:: _static/tortoisehg-explorer-menu.png
+     :alt: TortoiseHg 右クリックメニュー
+
+「About TortoiseHg」をクリックして見ましょう。
+
+  .. image:: _static/tortoisehg-about.png
+     :alt: TortoiseHg 情報
+
+KDiff3の代わりにWinMergeを利用する
+""""""""""""""""""""""""""""""""""
+TortoiseHgにはKDiff3がバンドルされていますが、いまいち使いにくいので `WinMerge`_ を利用するように変更します。
+
+右クリックメニューから「Global Settings」を選択します。
+
+  .. image:: _static/tortoisehg-explorer-menu-global-settings.png
+     :alt: TortoiseHg Global Settings
+
+「TortoiseHg」の「3-wayマージツール」、「GUI差分表示ツール」のプルダウンから「winmergeu」を選択します。
+
+  .. image:: _static/tortoisehg-global-settings-tortoisehg.png
+     :alt: TortoiseHg Global Settings
+
+.. _`WinMerge`: http://www.geocities.co.jp/SiliconValley-SanJose/8165/winmerge.html
+
+.. _windows_msi_installer:
+
+MSI installerを使って
+^^^^^^^^^^^^^^^^^^^^^
+GUIシェル拡張は不要でhgコマンドのみインストールしたい場合は MSI installer を利用してインストールします。
+
+TorotiseHgにはCUI Windows版バイナリ相当のファイルも同梱されています。TortoiseHgをインストール済みの場合は別途インストールする必要はありません。
+
+インストール
+""""""""""""
+1. まず http://mercurial.selenic.com/downloads/ からMSI installerダウンロードします。
+
+  .. image:: _static/msi-installer-download.png
+     :alt: MSIインストーラのダウンロード
+
+2. ダウンロードしたMSIインストーラを実行します。
+
+  .. image:: _static/msi-installer-start.png
+     :alt: MSIインストーラの実行
+
+3. ライセンスに同意します。問題無ければ「Next」をクリックします。
+
+  .. image:: _static/msi-installer-license-agreement.png
+     :alt: MSIインストーラ、ライセンスに同意
+
+4. インストール内容の確認を行います。インストール先を変更する場合は「Browse」を。問題無ければ「Next」をクリックします。
+
+  .. image:: _static/msi-installer-custom-setup.png
+     :alt: MSIインストーラ、インストール内容の確認
+
+5. インストール前の確認です。問題無ければ「Install」をクリックします。
+
+  .. image:: _static/msi-installer-ready-to-install.png
+     :alt: MSIインストーラ、インストール前の確認
+
+6. インストールが開始されます。
+
+  .. image:: _static/msi-installer-installing.png
+     :alt: MSIインストーラ、インストール
+
+7. 問題が無ければインストール完了です。
+
+  .. image:: _static/msi-installer-finish.png
+     :alt: MSIインストーラ、インストール完了
+
+.. _windows_inno_setup_installer:
+
+Inno Setup installerを使って
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MSI Installerは管理者権限が必要でしたが、Inno Setup installerを利用すると一般ユーザでもインストールが行えます。
+
+インストール方法はMSI Installerと同じですので、ここでは説明を割愛します。
+
+MacOSXの場合
+------------
+MacOSXの場合、次の選択肢からMercurialをインストールする方法を選ぶことが出来ます。
+
+.. list-table::
+   :widths: 15 40
+   :header-rows: 1
+
+   * - 要求
+     - インストール方法
+   * - GUIクライアントを利用したい場合
+     - :ref:`MacHgをインストール(OSX 10.6+)<mac_machg>` をインストール
+   * - CUIクライアントを利用したい場合
+     - :ref:`公式バイナリ<mac_official>` 、 :ref:`MacPorts<mac_macports>` 、 :ref:`Homebrew<mac_homebrew>` の中から好きなもの
+
+このドキュメントでは説明しませんが、 `SourceTree`_ という有償のクライアント(無償のトライアル版有り)も存在します
+
+.. _`SourceTree`: http://www.sourcetreeapp.com/
+
+.. _mac_machg:
+
+MacHgをインストール(OSX 10.6+)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+`MacHg`_  はTortoiseHg Workbenchに似たGUIクライアントです。無償で利用できますのでまずはじめに試すことをおすすめします。
+
+.. _`MacHg`: http://jasonfharris.com/machg/
+
+インストール
+""""""""""""
+1. まず http://jasonfharris.com/machg/downloads/downloads.html からMacHgのアーカイブをダウンロードします。
+
+  .. image:: _static/machg-download.png
+     :alt: MacHgのダウンロード
+
+2. ダウンロードしたMacHgのアーカイブを展開します。
+
+  .. image:: _static/machg-unzip.png
+     :alt: MacHgのアーカイブの展開
+
+3. 展開したするとMacHgというファイルが作成されます。
+
+  .. image:: _static/machg-unziped.png
+     :alt: 展開されたMacHg
+
+4. 展開したMacHgをアプリケーションディレクトリに移動させればインストール完了です。
+
+  .. image:: _static/machg-installed.png
+     :alt: アプリケーションディレクトリに移動
+
+インストール後の確認
+""""""""""""""""""""
+MacHgを起動してみましょう。次のような画面が表示されればインストール完了です。
+
+  .. image:: _static/machg.png
+     :alt: MacHg
+
+.. _mac_official:
+
+公式バイナリから
+^^^^^^^^^^^^^^^^
+TODO
+
+.. _mac_macports:
+
+MacPortsを使って
+^^^^^^^^^^^^^^^^
+
+`MacPorts`_ はFreeBSDのportsに似たパッケージ管理システムです。portsでインストールする事が出来ます。
+
+  ::
+
+    % ports install mercurial
+
+.. _`MacPorts`: http://www.macports.org/
+
+.. _mac_homebrew:
+
+Homebrewを使って
+^^^^^^^^^^^^^^^^
+
+`Homebrew`_ にはmercurialのパッケージは用意されていません。
+homebrewを利用してpythonとpythonのパッケージインストーラであるpipをインストール後、pipを利用してmercurialをインストールする必要があります。
+
+:ref:`pipを使って<linux_cygwin_pip>` も参照してください。
+
+  ::
+
+    % brew intall python
+    % brew intall pip
+    % pip intall mercurial
+
+.. _`Homebrew`: http://mxcl.github.com/homebrew/
+
+.. _linux_cygwin:
+
+Linux/Cygwinの場合
+------------------
+
+各ディストリビュージョンのパッケージから
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+各ディストリビュージョンのパッケージからmercurialをインストールする事ができます。
+
+2011/09/04時点でインストールされるバージョンは次の通りです。最新バージョンを利用したい場合はeasy_installもしくはソースコードからインストールする必要があります。
+
+.. list-table::
+   :widths: 10 10
+   :header-rows: 1
+
+   * - ディストリビュージョン
+     - mercurialのバージョン
+   * - Debian squeeze
+     - 1.6.4
+   * - Debian wheezy
+     - 1.8.3
+   * - Ubuntu 11.04
+     - 1.7.5
+   * - Centos 5 (Repoforge)
+     - 1.9
+   * - Cygwin
+     - 1.8.1
+   * - Cygwin
+     - 1.9.2
+
+Debian/Ubuntu
+"""""""""""""
+apt-getでインストールする事が出来ます。
+
+  ::
+
+    % apt-get install mercurial
+
+CentOS
+""""""
+CentOSの公式リポジトリにmercurialのパッケージは存在しませんが、 `Repoforge(旧名RPMforge)`_ を利用する事によってパッケージからインストールする事ができます。
+
+CentOS 5、アーキテクチャがx86_64の場合は次のコマンドでrepoforgeをインストールします。詳しくは http://repoforge.org/use/ を参照してください。
+
+  ::
+
+    % wget http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.2-2.el5.rf.x86_64.rpm
+    % rpm -Uhv rpmforge-release-0.5.2-2.el5.rf.x86_64.rpm
+
+yumでインストールする事が出来ます。
+
+  ::
+
+    % yum install mercurial
+
+.. _`Repoforge(旧名RPMforge)`: http://repoforge.org/
+
+
+Cygwin
+""""""
+setup.exeを使用したパッケージインストール時にmercurialを指定します。
+
+.. image:: _static/cygwin-setup.png
+   :alt: Cygwin setup.exeでのパッケージ指定
+
+easy_installを使って
+^^^^^^^^^^^^^^^^^^^^
+`easy_install`_ は `PyPI`_ の簡易インストーラです。システムのpythonを利用した場合、/usr/binにインストールするので気をつけてください。
+
+.. _`easy_install`: http://pypi.python.org/pypi/setuptools
+.. _`PyPI`: http://pypi.python.org/pypi
+
+easy_installのインストール
+""""""""""""""""""""""""""
+まずeasy_installをインストールしましょう。easy_installはez_setup.pyというブートストラップモジュールを使ってインストールすると簡単です。
+
+  ::
+
+    % curl -O http://peak.telecommunity.com/dist/ez_setup.py
+    % python ez_setup.py
+
+ez_setup.pyを利用しない場合は `easy_install`_ のページから適切なeggをダウンロードし、シェルスクリプトとして実行します。
+
+  ::
+
+    % curl -O http://pypi.python.org/packages/2.6/s/setuptools/setuptools-0.6c11-py2.6.egg
+    % sh setuptools-0.6c11-py2.6.egg
+
+.. _`easy_install`: http://pypi.python.org/pypi/setuptools
+
+easy_intallでmercurialをインストール
+""""""""""""""""""""""""""""""""""""
+easy_installを使ってmercurialをインストールします。
+
+  ::
+
+    % easy_install -U mercurial
+
+.. _linux_cygwin_pip:
+
+pipを使って
+^^^^^^^^^^^
+`pip`_ はeasy_installを置き換えるパッケージインストーラです。パッケージの検索、パッケージのアンインストールなど豊富な機能を備えています。
+
+.. _`pip`: http://pypi.python.org/pypi/pip
+
+pipのインストール
+"""""""""""""""""
+easy_installを使ってインストールする事が出来ます。
+
+  ::
+
+    % easy_install -U pip
+
+easy_installを利用しない場合は専用のget-pip.pyというインストーラを利用してインストールします。
+
+  ::
+
+    % curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+    % python get-pip.py
+
+pipでmercurialをインストール
+""""""""""""""""""""""""""""
+pipを使ってmercurialをインストールします。
+
+  ::
+
+    % pip install mercurial
+
+ソースから
+^^^^^^^^^^
+mercurial 1.4以降は `docutils`_ というパッケージに依存しています。easy_installやpipを利用する場合は依存関係解決の中で自動的にインストールされますが、ソースからインストールする場合は自前でインストールする必要があります。
+
+docutilsのインストール
+""""""""""""""""""""""
+easy_installを利用する事も出来ます。
+
+  ::
+
+    % easy_install -U docutils
+
+ソースコードからインストールする場合は、 `docutils`_ のサイトからアーカイブを取得します。
+
+  ::
+
+    % tar zxvf docutils-0.8.tar.gz
+    % cd docutils-0.8
+    % ./setup.py install
+
+.. _`docutils`: http://docutils.sourceforge.net/
+
+
+mercurialのソースコードアーカイブの取得
+"""""""""""""""""""""""""""""""""""""""
+ソースコードアーカイブを取得、展開します。
+
+  ::
+
+    % curl -O http://mercurial.selenic.com/release/mercurial-1.9.tar.gz
+    % tar zxvf mercurial-1.9.tar.gz
+    % cd mercurial-1.9
+
+mercurialにはconfigureスクリプトは同梱されていないので、適切にmakeコマンドに引数を与えてインストールします
+
+ユーザ毎にインストール
+""""""""""""""""""""""
+~/bin、~/lib以下にインストールする場合です。
+
+  ::
+
+    % make install-home
+
+システムワイドにインストール
+""""""""""""""""""""""""""""
+/usr/local以下にインストールする場合です。
+
+  ::
+
+    % make install
+
+プレフィックスを変更する場合はPREFIXを指定します。
+
+  ::
+
+    % make install PREFIX=/path/to/mercurial
+
+参考文献
+--------
+- `Download - Mercurial`_
+- `WindowsInstall - Mercurial`_
+- `UnixInstall - Mercurial`_
+
+.. _`Download - Mercurial`: http://mercurial.selenic.com/wiki/Download
+.. _`WindowsInstall - Mercurial`: http://mercurial.selenic.com/wiki/WindowsInstall
+.. _`UnixInstall - Mercurial`: http://mercurial.selenic.com/wiki/UnixInstall
