@@ -3,16 +3,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>How to install Mercurial - SCM Boot Camp #1 &mdash; SCMBC 2011.07 How to install Mercurial 0.0.1 documentation</title>
-    
+    <title>How to install Mercurial &mdash; How to install Mercurial v0.0.1 documentation</title>
     <link rel="stylesheet" href="static/bizstyle.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
@@ -25,7 +22,7 @@
     <script type="text/javascript" src="static/jquery.js"></script>
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
-    <link rel="top" title="SCMBC 2011.07 How to install Mercurial 0.0.1 documentation" href="#" /> 
+    <link rel="top" title="How to install Mercurial v0.0.1 documentation" href="#" /> 
   </head>
   <body>
     <div class="related">
@@ -34,14 +31,14 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="#">SCMBC 2011.07 How to install Mercurial 0.0.1 documentation</a> &raquo;</li> 
+        <li><a href="#">How to install Mercurial v0.0.1 documentation</a> &raquo;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h3><a href="#">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">How to install Mercurial - SCM Boot Camp #1</a><ul>
+<li><a class="reference internal" href="#">How to install Mercurial</a><ul>
 <li><a class="reference internal" href="#id1">はじめに</a></li>
 <li><a class="reference internal" href="#mercurial">Mercurialの入手方法</a></li>
 <li><a class="reference internal" href="#windows">Windowsの場合</a><ul>
@@ -108,7 +105,7 @@
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" size="18" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
@@ -126,19 +123,18 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="how-to-install-mercurial-scm-boot-camp-1">
-<h1>How to install Mercurial - SCM Boot Camp #1<a class="headerlink" href="#how-to-install-mercurial-scm-boot-camp-1" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="how-to-install-mercurial">
+<h1>How to install Mercurial<a class="headerlink" href="#how-to-install-mercurial" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id1">
 <h2>はじめに<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>このドキュメントは <a class="reference external" href="http://kokucheese.com/event/index/13468/">SCM Boot Camp in Tokyo(2011-07-30)</a> 配布資料です。</li>
-<li>mercurialのインストールドキュメントは <a class="reference external" href="https://bitbucket.org/troter/scmbc-2011.07-how-to-install-mercurial">bitbucketに移動しました</a></li>
+<li>mercurialのインストールドキュメントは <a class="reference external" href="https://bitbucket.org/mercurialjp/how-to-install-mercurial">bitbucketに移動しました</a></li>
 <li>GUIクライアント、CUIクライアントの両方をインストールしてください。</li>
 </ul>
 </div>
 <div class="section" id="mercurial">
 <h2>Mercurialの入手方法<a class="headerlink" href="#mercurial" title="Permalink to this headline">¶</a></h2>
-<p>次のURLから取得できます。2012/02/12時点の最新はMercurial-2.1です。</p>
+<p>次のURLから取得できます。2012/06/23時点の最新はMercurial-2.2.2です。</p>
 <ul class="simple">
 <li><a class="reference external" href="http://mercurial.selenic.com/downloads/">http://mercurial.selenic.com/downloads/</a></li>
 </ul>
@@ -154,24 +150,24 @@
 <col width="40%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">クライアント</th>
+<tr><th class="head">クライアント</th>
 <th class="head">GUI</th>
 <th class="head">CUI</th>
 <th class="head">備考</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#windows-tortoisehg"><em>TortoiseHg</em></a></td>
+<tr><td><a class="reference internal" href="#windows-tortoisehg"><em>TortoiseHg</em></a></td>
 <td>○</td>
 <td>○</td>
 <td>万人におすすめ</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#windows-inno-setup-installer"><em>Inno Setup installer</em></a></td>
+<tr><td><a class="reference internal" href="#windows-inno-setup-installer"><em>Inno Setup installer</em></a></td>
 <td>×</td>
 <td>○</td>
 <td>管理者権限が不要</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#linux-cygwin"><em>Cygwin mercurial</em></a></td>
+<tr><td><a class="reference internal" href="#linux-cygwin"><em>Cygwin mercurial</em></a></td>
 <td>×</td>
 <td>○</td>
 <td>Cygwin</td>
@@ -190,60 +186,60 @@ WindowsでMercurialを利用したい場合はTortoiseHgをインストールす
 <li>まず <a class="reference external" href="http://mercurial.selenic.com/downloads/">http://mercurial.selenic.com/downloads/</a> からTortoiseHgのインストーラをダウンロードします。</li>
 </ol>
 <blockquote>
-<div><img alt="TortoiseHgのダウンロード" src="images/tortoisehg-download.png" />
+<div><img alt="TortoiseHgのダウンロード" src="images/tortoisehg-download1.png" />
 </div></blockquote>
 <ol class="arabic simple" start="2">
 <li>ダウンロードしたTortoiseHgインストーラを実行します。</li>
 </ol>
 <blockquote>
-<div><img alt="TortoiseHgインストーラの実行" src="images/tortoisehg-installer-start.png" />
+<div><img alt="TortoiseHgインストーラの実行" src="images/tortoisehg-installer-start1.png" />
 </div></blockquote>
 <ol class="arabic simple" start="3">
 <li>ライセンスに同意します。問題無ければ「Next」をクリックします。</li>
 </ol>
 <blockquote>
-<div><img alt="TortoiseHgインストーラ、ライセンスに同意" src="images/tortoisehg-installer-license-agreement.png" />
+<div><img alt="TortoiseHgインストーラ、ライセンスに同意" src="images/tortoisehg-installer-license-agreement1.png" />
 </div></blockquote>
 <ol class="arabic simple" start="4">
 <li>インストール内容の確認を行います。インストール先を変更する場合は「Browse」を。問題無ければ「Next」をクリックします。</li>
 </ol>
 <blockquote>
-<div><img alt="TortoiseHgインストーラ、インストール内容の確認" src="images/tortoisehg-installer-custom-setup.png" />
+<div><img alt="TortoiseHgインストーラ、インストール内容の確認" src="images/tortoisehg-installer-custom-setup1.png" />
 </div></blockquote>
 <ol class="arabic simple" start="5">
 <li>インストール前の確認です。問題無ければ「Install」をクリックします。</li>
 </ol>
 <blockquote>
-<div><img alt="TortoiseHgインストーラ、インストール前の確認" src="images/tortoisehg-installer-ready-to-install.png" />
+<div><img alt="TortoiseHgインストーラ、インストール前の確認" src="images/tortoisehg-installer-ready-to-install1.png" />
 </div></blockquote>
 <ol class="arabic simple" start="6">
 <li>インストールが開始されます。</li>
 </ol>
 <blockquote>
-<div><img alt="TortoiseHgインストーラ、インストール" src="images/tortoisehg-installer-installing.png" />
+<div><img alt="TortoiseHgインストーラ、インストール" src="images/tortoisehg-installer-installing1.png" />
 </div></blockquote>
 <ol class="arabic simple" start="7">
 <li>インストール時にエクスプローラの再起動を要求されます。問題無ければ「OK」をクリックします。</li>
 </ol>
 <blockquote>
-<div><img alt="TortoiseHgインストーラ、エクスプローラの再起動" src="images/tortoisehg-installer-explorer-restart-request.png" />
+<div><img alt="TortoiseHgインストーラ、エクスプローラの再起動" src="images/tortoisehg-installer-explorer-restart-request1.png" />
 </div></blockquote>
 <ol class="arabic simple" start="8">
 <li>問題が無ければインストール完了です。</li>
 </ol>
 <blockquote>
-<div><img alt="TortoiseHgインストーラ、インストール完了" src="images/tortoisehg-installer-finish.png" />
+<div><img alt="TortoiseHgインストーラ、インストール完了" src="images/tortoisehg-installer-finish1.png" />
 </div></blockquote>
 </div>
 <div class="section" id="id4">
 <h4>インストール後の確認<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <p>エクスプローラの右クリックメニューを確認してみましょう。</p>
 <blockquote>
-<div><img alt="TortoiseHg 右クリックメニュー" src="images/tortoisehg-explorer-menu.png" />
+<div><img alt="TortoiseHg 右クリックメニュー" src="images/tortoisehg-explorer-menu1.png" />
 </div></blockquote>
 <p>「About TortoiseHg」をクリックして見ましょう。</p>
 <blockquote>
-<div><img alt="TortoiseHg 情報" src="images/tortoisehg-about.png" />
+<div><img alt="TortoiseHg 情報" src="images/tortoisehg-about1.png" />
 </div></blockquote>
 </div>
 <div class="section" id="kdiff3winmerge">
@@ -251,11 +247,11 @@ WindowsでMercurialを利用したい場合はTortoiseHgをインストールす
 <p>TortoiseHgにはKDiff3がバンドルされていますが、いまいち使いにくいので <a class="reference external" href="http://www.geocities.co.jp/SiliconValley-SanJose/8165/winmerge.html">WinMerge</a> を利用するように変更します。</p>
 <p>右クリックメニューから「Global Settings」を選択します。</p>
 <blockquote>
-<div><img alt="TortoiseHg Global Settings" src="images/tortoisehg-explorer-menu-global-settings.png" />
+<div><img alt="TortoiseHg Global Settings" src="images/tortoisehg-explorer-menu-global-settings1.png" />
 </div></blockquote>
 <p>「TortoiseHg」の「3-wayマージツール」、「GUI差分表示ツール」のプルダウンから「winmergeu」を選択します。</p>
 <blockquote>
-<div><img alt="TortoiseHg Global Settings" src="images/tortoisehg-global-settings-tortoisehg.png" />
+<div><img alt="TortoiseHg Global Settings" src="images/tortoisehg-global-settings-tortoisehg1.png" />
 </div></blockquote>
 </div>
 </div>
@@ -268,49 +264,49 @@ WindowsでMercurialを利用したい場合はTortoiseHgをインストールす
 <li>まず <a class="reference external" href="http://mercurial.selenic.com/downloads/">http://mercurial.selenic.com/downloads/</a> からInno Setup installerダウンロードします。</li>
 </ol>
 <blockquote>
-<div><img alt="Inno Setup installerのダウンロード" src="images/inno-setup-installer-download.png" />
+<div><img alt="Inno Setup installerのダウンロード" src="images/inno-setup-installer-download1.png" />
 </div></blockquote>
 <ol class="arabic simple" start="2">
 <li>ダウンロードしたInno Setup installerを実行します。</li>
 </ol>
 <blockquote>
-<div><img alt="Inno Setup installerの実行" src="images/inno-setup-installer-start.png" />
+<div><img alt="Inno Setup installerの実行" src="images/inno-setup-installer-start1.png" />
 </div></blockquote>
 <ol class="arabic simple" start="3">
 <li>ライセンスに同意します。問題無ければ「Next」をクリックします。</li>
 </ol>
 <blockquote>
-<div><img alt="Inno Setup installer、ライセンスに同意" src="images/inno-setup-installer-license-agreement.png" />
+<div><img alt="Inno Setup installer、ライセンスに同意" src="images/inno-setup-installer-license-agreement1.png" />
 </div></blockquote>
 <ol class="arabic simple" start="4">
 <li>インストール内容の確認を行います。インストール先を変更する場合は「Browse」を。問題無ければ「Next」をクリックします。</li>
 </ol>
 <blockquote>
-<div><img alt="Inno Setup installer、インストール内容の確認" src="images/inno-setup-installer-custom-setup.png" />
+<div><img alt="Inno Setup installer、インストール内容の確認" src="images/inno-setup-installer-custom-setup1.png" />
 </div></blockquote>
 <ol class="arabic simple" start="5">
 <li>インストール前の確認です。問題無ければ「Install」をクリックします。</li>
 </ol>
 <blockquote>
-<div><img alt="Inno Setup installer、インストール前の確認" src="images/inno-setup-installer-ready-to-install.png" />
+<div><img alt="Inno Setup installer、インストール前の確認" src="images/inno-setup-installer-ready-to-install1.png" />
 </div></blockquote>
 <ol class="arabic simple" start="6">
 <li>インストールが開始されます。</li>
 </ol>
 <blockquote>
-<div><img alt="Inno Setup installer、インストール" src="images/inno-setup-installer-installing.png" />
+<div><img alt="Inno Setup installer、インストール" src="images/inno-setup-installer-installing1.png" />
 </div></blockquote>
 <ol class="arabic simple" start="7">
 <li>問題が無ければメッセージがでます。</li>
 </ol>
 <blockquote>
-<div><img alt="Inno Setup installer、情報" src="images/inno-setup-installer-information.png" />
+<div><img alt="Inno Setup installer、情報" src="images/inno-setup-installer-information1.png" />
 </div></blockquote>
 <ol class="arabic simple" start="8">
 <li>問題が無ければインストール完了です。</li>
 </ol>
 <blockquote>
-<div><img alt="Inno Setup installer、インストール完了" src="images/inno-setup-installer-finish.png" />
+<div><img alt="Inno Setup installer、インストール完了" src="images/inno-setup-installer-finish1.png" />
 </div></blockquote>
 </div>
 </div>
@@ -326,34 +322,34 @@ WindowsでMercurialを利用したい場合はTortoiseHgをインストールす
 <col width="40%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">クライアント</th>
+<tr><th class="head">クライアント</th>
 <th class="head">GUI</th>
 <th class="head">CUI</th>
 <th class="head">備考</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#mac-machg"><em>MacHg</em></a></td>
+<tr><td><a class="reference internal" href="#mac-machg"><em>MacHg</em></a></td>
 <td>○</td>
 <td>×</td>
 <td>10.6+</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#mac-sourcetree"><em>SourceTree</em></a></td>
+<tr><td><a class="reference internal" href="#mac-sourcetree"><em>SourceTree</em></a></td>
 <td>○</td>
 <td>×</td>
 <td>10.6+</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#mac-official"><em>公式バイナリ</em></a></td>
+<tr><td><a class="reference internal" href="#mac-official"><em>公式バイナリ</em></a></td>
 <td>×</td>
 <td>○</td>
 <td>10.6+</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#mac-macports"><em>MacPorts</em></a></td>
+<tr><td><a class="reference internal" href="#mac-macports"><em>MacPorts</em></a></td>
 <td>×</td>
 <td>○</td>
 <td>&nbsp;</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#mac-homebrew"><em>Homebrew</em></a></td>
+<tr><td><a class="reference internal" href="#mac-homebrew"><em>Homebrew</em></a></td>
 <td>×</td>
 <td>○</td>
 <td>&nbsp;</td>
@@ -369,32 +365,32 @@ WindowsでMercurialを利用したい場合はTortoiseHgをインストールす
 <li>まず <a class="reference external" href="http://jasonfharris.com/machg/downloads/downloads.html">http://jasonfharris.com/machg/downloads/downloads.html</a> からMacHgのアーカイブをダウンロードします。</li>
 </ol>
 <blockquote>
-<div><img alt="MacHgのダウンロード" src="images/machg-download.png" />
+<div><img alt="MacHgのダウンロード" src="images/machg-download1.png" />
 </div></blockquote>
 <ol class="arabic simple" start="2">
 <li>ダウンロードしたMacHgのアーカイブを展開します。</li>
 </ol>
 <blockquote>
-<div><img alt="MacHgのアーカイブの展開" src="images/machg-unzip.png" />
+<div><img alt="MacHgのアーカイブの展開" src="images/machg-unzip1.png" />
 </div></blockquote>
 <ol class="arabic simple" start="3">
 <li>展開したするとMacHgというファイルが作成されます。</li>
 </ol>
 <blockquote>
-<div><img alt="展開されたMacHg" src="images/machg-unziped.png" />
+<div><img alt="展開されたMacHg" src="images/machg-unziped1.png" />
 </div></blockquote>
 <ol class="arabic simple" start="4">
 <li>展開したMacHgをアプリケーションディレクトリに移動させればインストール完了です。</li>
 </ol>
 <blockquote>
-<div><img alt="アプリケーションディレクトリに移動" src="images/machg-installed.png" />
+<div><img alt="アプリケーションディレクトリに移動" src="images/machg-installed1.png" />
 </div></blockquote>
 </div>
 <div class="section" id="id7">
 <h4>インストール後の確認<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
 <p>MacHgを起動してみましょう。次のような画面が表示されればインストール完了です。</p>
 <blockquote>
-<div><img alt="MacHg" src="images/machg.png" />
+<div><img alt="MacHg" src="images/machg1.png" />
 </div></blockquote>
 </div>
 </div>
@@ -437,33 +433,36 @@ WindowsでMercurialを利用したい場合はTortoiseHgをインストールす
 <col width="50%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">ディストリビューション</th>
+<tr><th class="head">ディストリビューション</th>
 <th class="head">mercurialのバージョン</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Debian squeeze</td>
+<tr><td>Debian squeeze</td>
 <td>1.6.4</td>
 </tr>
-<tr class="row-odd"><td>Debian wheezy</td>
+<tr><td>Debian wheezy</td>
 <td>2.0.2</td>
 </tr>
-<tr class="row-even"><td>Ubuntu 11.04 (natty)</td>
+<tr><td>Ubuntu 11.04 (natty)</td>
 <td>1.7.5</td>
 </tr>
-<tr class="row-odd"><td>Ubuntu 11.10 (oneiric)</td>
+<tr><td>Ubuntu 11.10 (oneiric)</td>
 <td>1.9.1</td>
 </tr>
-<tr class="row-even"><td>Centos 5 (Repoforge)</td>
+<tr><td>Ubuntu 12.04 (precise)</td>
 <td>2.0.2</td>
 </tr>
-<tr class="row-odd"><td>Centos 6 (Repoforge)</td>
-<td>2.0.2</td>
+<tr><td>Centos 5 (Repoforge)</td>
+<td>2.2.2</td>
 </tr>
-<tr class="row-even"><td>Cygwin</td>
+<tr><td>Centos 6 (Repoforge)</td>
+<td>2.2.2</td>
+</tr>
+<tr><td>Cygwin</td>
 <td>1.9.2</td>
 </tr>
-<tr class="row-odd"><td>Cygwin</td>
+<tr><td>Cygwin</td>
 <td>1.9.3</td>
 </tr>
 </tbody>
@@ -494,7 +493,7 @@ WindowsでMercurialを利用したい場合はTortoiseHgをインストールす
 <div class="section" id="cygwin">
 <h4>Cygwin<a class="headerlink" href="#cygwin" title="Permalink to this headline">¶</a></h4>
 <p>setup.exeを使用したパッケージインストール時にmercurialを指定します。</p>
-<img alt="Cygwin setup.exeでのパッケージ指定" src="images/cygwin-setup.png" />
+<img alt="Cygwin setup.exeでのパッケージ指定" src="images/cygwin-setup1.png" />
 </div>
 </div>
 <div class="section" id="easy-install">
@@ -572,9 +571,9 @@ WindowsでMercurialを利用したい場合はTortoiseHgをインストールす
 <h4>mercurialのソースコードアーカイブの取得<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h4>
 <p>ソースコードアーカイブを取得、展開します。</p>
 <blockquote>
-<div><div class="highlight-python"><pre>% curl -O http://mercurial.selenic.com/release/mercurial-2.1.tar.gz
-% tar zxvf mercurial-2.1.tar.gz
-% cd mercurial-2.1</pre>
+<div><div class="highlight-python"><pre>% curl -O http://mercurial.selenic.com/release/mercurial-2.2.2.tar.gz
+% tar zxvf mercurial-2.2.2.tar.gz
+% cd mercurial-2.2.2</pre>
 </div>
 </div></blockquote>
 <p>mercurialにはconfigureスクリプトは同梱されていないので、適切にmakeコマンドに引数を与えてインストールします</p>
@@ -624,12 +623,12 @@ WindowsでMercurialを利用したい場合はTortoiseHgをインストールす
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
-        <li><a href="#">SCMBC 2011.07 How to install Mercurial 0.0.1 documentation</a> &raquo;</li> 
+        <li><a href="#">How to install Mercurial v0.0.1 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
-        &copy; Copyright 2011, SCMBC Mercurial Support Team.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.2.
+        &copy; Copyright 2011-2012, SCMBC Mercurial Support Team.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
     </div>
   </body>
 </html>

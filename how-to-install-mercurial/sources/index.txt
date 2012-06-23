@@ -1,20 +1,18 @@
 =================================================
- How to install Mercurial - SCM Boot Camp #1
+ How to install Mercurial
 =================================================
 
 はじめに
 --------
-- このドキュメントは `SCM Boot Camp in Tokyo(2011-07-30)`_ 配布資料です。
 - mercurialのインストールドキュメントは `bitbucketに移動しました`_
 - GUIクライアント、CUIクライアントの両方をインストールしてください。
 
-.. _`SCM Boot Camp in Tokyo(2011-07-30)`: http://kokucheese.com/event/index/13468/
-.. _`bitbucketに移動しました`: https://bitbucket.org/troter/scmbc-2011.07-how-to-install-mercurial
+.. _`bitbucketに移動しました`: https://bitbucket.org/mercurialjp/how-to-install-mercurial
 
 
 Mercurialの入手方法
 -------------------
-次のURLから取得できます。2012/02/12時点の最新はMercurial-2.1です。
+次のURLから取得できます。2012/06/23時点の最新はMercurial-2.2.2です。
 
 - http://mercurial.selenic.com/downloads/
 
@@ -310,10 +308,12 @@ Linux/Cygwinの場合
      - 1.7.5
    * - Ubuntu 11.10 (oneiric)
      - 1.9.1
+   * - Ubuntu 12.04 (precise)
+     - 2.0.2
    * - Centos 5 (Repoforge)
-     - 2.0.2
+     - 2.2.2
    * - Centos 6 (Repoforge)
-     - 2.0.2
+     - 2.2.2
    * - Cygwin
      - 1.9.2
    * - Cygwin
@@ -447,9 +447,9 @@ mercurialのソースコードアーカイブの取得
 
   ::
 
-    % curl -O http://mercurial.selenic.com/release/mercurial-2.1.tar.gz
-    % tar zxvf mercurial-2.1.tar.gz
-    % cd mercurial-2.1
+    % curl -O http://mercurial.selenic.com/release/mercurial-2.2.2.tar.gz
+    % tar zxvf mercurial-2.2.2.tar.gz
+    % cd mercurial-2.2.2
 
 mercurialにはconfigureスクリプトは同梱されていないので、適切にmakeコマンドに引数を与えてインストールします
 
