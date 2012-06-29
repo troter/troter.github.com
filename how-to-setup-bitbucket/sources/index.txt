@@ -1,0 +1,73 @@
+=================================================
+ How to setup Bitbucket
+=================================================
+
+Bitbucketアカウントの作成
+=========================
+
+1. https://bitbucket.org/ にアクセスします。
+
+2. 「SIGN UP NOW, FREE」という黄色のボタンをクリックします。
+
+  .. image:: _static/bitbucket-registration-top.png
+     :alt: Bitbucket.org
+
+3. (requried)の項目を入力して「Sign up」をクリックします。
+
+  .. image:: _static/bitbucket-registration-account.png
+     :alt: Account
+
+4. 確認メールが送信されるので、メールを確認し記載されたリンクにアクセスします。
+5. アカウント登録完了です。
+
+
+アカウントの設定
+================
+先ほど作成したアカウント情報をmercurialに設定します。
+
+次の内容を設定ファイルに記載してください。
+
+  .. code-block:: ini
+
+    [ui]
+    username = "ユーザ名 <メールアドレス>"
+
+.. note::
+
+  - Windowsの場合: %USERPROFILE%\mercurial.ini
+  - Linuxの場合: $HOME/.hgrc
+
+.. note::
+
+  リポジトリ毎にユーザ名を変更したい場合は、リポジトリの .hg/hgrc に設定してください。
+
+  .. code-block:: ini
+
+    [ui]
+    username = "ユーザ名 <メールアドレス>"
+
+
+
+Bitbucket用URLの設定
+--------------------
+`Schemes Extension <http://mercurial.selenic.com/wiki/SchemesExtension>`_ を利用すると次のような短縮URLでBitbucketのリポジトリにアクセスできます。
+
+  .. code-block:: sh
+
+    bb://{ユーザ名}/{リポジトリ名}
+
+設定ファイルに次の記述を追加してください。
+
+  .. code-block:: ini
+
+    [extensions]
+    schemes =
+
+試しにこのドキュメントのリポジトリをクローンしてみましょう。
+
+  .. code-block:: sh
+
+    $ hg clone bb://mercurialjp/how-to-setup-bitbucket
+
+.. note:: `Schemes Extension <http://mercurial.selenic.com/wiki/SchemesExtension>`_ はMercurialに同梱されています。
+
