@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-lang="ja" xml:lang="ja">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
 <title>TROTER.JP</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="title" content="TROTER.JP"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2012-02-02 00:25:34 "/>
+<meta name="generated" content="2012-12-07 14:26:45 Asi"/>
 <meta name="author" content="Takumi IINO (troter)"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -21,6 +21,9 @@ lang="ja" xml:lang="ja">
   .target { }
   .timestamp { color: #bebebe; }
   .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
   p.verse { margin-left: 3% }
   pre {
 	border: 1pt solid #AEBDCC;
@@ -31,10 +34,23 @@ lang="ja" xml:lang="ja">
         overflow:auto;
   }
   table { border-collapse: collapse; }
-  td, th { vertical-align: top; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
   dt { font-weight: bold; }
   div.figure { padding: 0.5em; }
   div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
   .linenr { font-size:smaller }
   .code-highlighted {background-color:#ffff00;}
   .org-info-js_info-navigation { border-style:none; }
@@ -67,10 +83,15 @@ lang="ja" xml:lang="ja">
  }
 /*]]>*///-->
 </script>
+
 </head>
 <body>
-<div id="content">
 
+<div id="preamble">
+
+</div>
+
+<div id="content">
 <h1 class="title">TROTER.JP</h1>
 
 
@@ -91,136 +112,121 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 
 <div id="outline-container-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> About </h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> About</h2>
 <div class="outline-text-2" id="text-1">
 
 <ul>
-<li>
-Takumi IINO (a.k.a troter)
+<li>Takumi IINO (a.k.a troter)
 </li>
-<li>
-Software Engineer
+<li>Software Engineer
 </li>
-<li>
-Emacs, Ruby, PHP, Java
-
+<li>Emacs, Ruby, PHP, Java
 </li>
 </ul>
+
+
 </div>
 
 </div>
 
 <div id="outline-container-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> Resource </h2>
+<h2 id="sec-2"><span class="section-number-2">2</span> Resource</h2>
 <div class="outline-text-2" id="text-2">
 
 <ul>
-<li>
-Twitter(<a href="http://twitter.com/troter">@troter</a>)
+<li>Twitter(<a href="http://twitter.com/troter">@troter</a>)
 <ul>
-<li>
-<a href="http://twilog.org/troter">Twilog</a>
+<li><a href="http://twilog.org/troter">Twilog</a>
 </li>
 </ul>
-</li>
-<li>
-Hatena(<a href="http://d.hatena.ne.jp/troter">id:troter</a>)
-</li>
-<li>
-Github(<a href="https://github.com/troter">troter</a>)
-</li>
-<li>
-Bitbucket(<a href="https://bitbucket.org/troter">troter</a>)
 
 </li>
+<li>Hatena(<a href="http://d.hatena.ne.jp/troter">id:troter</a>)
+</li>
+<li>Github(<a href="https://github.com/troter">troter</a>)
+</li>
+<li>Bitbucket(<a href="https://bitbucket.org/troter">troter</a>)
+</li>
 </ul>
+
+
 </div>
 
 </div>
 
 <div id="outline-container-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> Projects </h2>
+<h2 id="sec-3"><span class="section-number-2">3</span> Projects</h2>
 <div class="outline-text-2" id="text-3">
 
 <dl>
-<dt><a href="https://github.com/troter/tags-capture">tags-capture</a></dt><dd>
-Simple capture library for JSP.
+<dt><a href="https://github.com/troter/tags-capture">tags-capture</a></dt><dd>Simple capture library for JSP.
 </dd>
-<dt><a href="https://github.com/troter/s2jdbc-custom-enum-type">s2jdbc-custom-enum-type</a></dt><dd>
-Custom enum type support for S2JDBC.
+<dt><a href="https://github.com/troter/s2jdbc-custom-enum-type">s2jdbc-custom-enum-type</a></dt><dd>Custom enum type support for S2JDBC.
 </dd>
-<dt><a href="https://github.com/troter/s2jdbc-master-slave">s2jdbc-master-slave</a></dt><dd>
-Master-Slave support for S2JDBC.
+<dt><a href="https://github.com/troter/s2jdbc-master-slave">s2jdbc-master-slave</a></dt><dd>Master-Slave support for S2JDBC.
 </dd>
-<dt><a href="https://github.com/troter/s2jdbc-selectable">s2jdbc-selectable</a></dt><dd>
-Thin sharding helper for S2JDBC.
+<dt><a href="https://github.com/troter/s2jdbc-selectable">s2jdbc-selectable</a></dt><dd>Thin sharding helper for S2JDBC.
 </dd>
-<dt><a href="https://github.com/troter/s2mai-oreo">s2mai-oreo</a></dt><dd>
-S2Mai oreore extension.
+<dt><a href="https://github.com/troter/s2mai-oreo">s2mai-oreo</a></dt><dd>S2Mai oreore extension.
 </dd>
-<dt><a href="https://github.com/troter/log4j-rotate">log4j-rotate</a></dt><dd>
-Log4j rotate file appender.
+<dt><a href="https://github.com/troter/log4j-rotate">log4j-rotate</a></dt><dd>Log4j rotate file appender.
 </dd>
-<dt><a href="https://bitbucket.org/troter/schema-update">schema-update</a></dt><dd>
-Database schema migration tool.
-
+<dt><a href="https://bitbucket.org/troter/schema-update">schema-update</a></dt><dd>Database schema migration tool.
 </dd>
 </dl>
+
+
 
 </div>
 
-<div id="outline-container-3.1" class="outline-3">
-<h3 id="sec-3.1"><span class="section-number-3">3.1</span> Maven Repository </h3>
-<div class="outline-text-3" id="text-3.1">
+<div id="outline-container-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Maven Repository</h3>
+<div class="outline-text-3" id="text-3-1">
 
 <dl>
-<dt>release </dt><dd>
-<a href="http://troter.jp/maven2/release">http://troter.jp/maven2/release</a> <br/> <a href="https://github.com/troter/troter.github.com/tree/master/maven2/release">https://github.com/troter/troter.github.com/tree/master/maven2/release</a>
+<dt>release </dt><dd><a href="http://troter.jp/maven2/release">http://troter.jp/maven2/release</a> <br/> <a href="https://github.com/troter/troter.github.com/tree/master/maven2/release">https://github.com/troter/troter.github.com/tree/master/maven2/release</a>
 </dd>
-<dt>snapshot</dt><dd>
-<a href="http://troter.jp/maven2/snapshots">http://troter.jp/maven2/snapshots</a> <br/> <a href="https://github.com/troter/troter.github.com/tree/master/maven2/snapshots">https://github.com/troter/troter.github.com/tree/master/maven2/snapshots</a>
-
+<dt>snapshot</dt><dd><a href="http://troter.jp/maven2/snapshots">http://troter.jp/maven2/snapshots</a> <br/> <a href="https://github.com/troter/troter.github.com/tree/master/maven2/snapshots">https://github.com/troter/troter.github.com/tree/master/maven2/snapshots</a>
 </dd>
 </dl>
+
+
 </div>
 </div>
 
 </div>
 
 <div id="outline-container-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> Publications </h2>
+<h2 id="sec-4"><span class="section-number-2">4</span> Publications</h2>
 <div class="outline-text-2" id="text-4">
 
 <ul>
-<li>
-<a href="./mercurial-cheatsheet">Mercurial チートシート</a>
+<li><a href="./mercurial-cheatsheet">Mercurial チートシート</a>
 </li>
-<li>
-<a href="./how-to-install-mercurial">Mercurialのインストール方法(SCMBC用資料)</a>
+<li><a href="./how-to-install-mercurial">Mercurialのインストール方法(SCMBC用資料)</a>
 </li>
-<li>
-<a href="./timstudy-201110-memocurial-introduction">timstudy 201110 発表資料 Memocurialの紹介</a>
+<li><a href="./timstudy-201110-memocurial-introduction">timstudy 201110 発表資料 Memocurialの紹介</a>
 </li>
-<li>
-<a href="./timstudy-201110-gnu-screen-introduction">timstudy 201110 発表資料 GNU Screenの紹介</a>
+<li><a href="./timstudy-201110-gnu-screen-introduction">timstudy 201110 発表資料 GNU Screenの紹介</a>
 </li>
-<li>
-<a href="./scmbc-201111-mercurial-introsession">SCMBC #2 Mercurial 入門セッション資料</a>
+<li><a href="./scmbc-201111-mercurial-introsession">SCMBC #2 Mercurial 入門セッション資料</a>
 </li>
-<li>
-<a href="./timstudy-201202-jenkins-introduction">timstudy 201202 発表資料 Jenkinsの紹介</a>
+<li><a href="./timstudy-201202-jenkins-introduction">timstudy 201202 発表資料 Jenkinsの紹介</a>
+</li>
+<li><a href="./pyconjp-2012-dvcs/">PyConJP 2012 発表資料 (分散)バージョン管理システムの組織化</a>
 </li>
 </ul>
+
 </div>
 </div>
+</div>
+
 <div id="postamble">
-<p class="author"> Author: Takumi IINO (troter)
-<a href="mailto:takumi@timedia.co.jp">&lt;takumi@timedia.co.jp&gt;</a>
-<a href="mailto:trot.thunder@gmail.com">&lt;trot.thunder@gmail.com&gt;</a>
-</p>
-<p class="date"> Date: 2012-02-02 00:25:34 </p>
-<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
-</div>
+<p class="date">Date: 2012-12-07 14:26:45 Asi</p>
+<p class="author">Author: Takumi IINO (troter)</p>
+<p class="creator">Org version 7.8.11 with Emacs version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
 </div>
 </body>
 </html>
